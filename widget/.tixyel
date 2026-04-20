@@ -1,0 +1,32 @@
+{
+  "type": "single",
+  "name": "stick-out",
+  "description": "A stream overlay widget that animates a 3D voxel stick on screen via chat command or Channel Points. Supports custom pixel-art skins. Works with Twitch, YouTube, and Kick via StreamElements.",
+  "version": "0.1.0",
+  "config": "../tixyel.config.ts",
+  "metadata": {
+    "author": "wielorzeczownik",
+    "tags": [
+      "stick",
+      "voxel",
+      "3d",
+      "animation",
+      "chat",
+      "twitch",
+      "youtube",
+      "kick",
+      "streamelements",
+      "stream-overlay",
+      "widget",
+      "obs",
+      "obs-widget",
+      "channel-points"
+    ]
+  },
+  "dirs": {
+    "entry": "compiled",
+    "output": "dist",
+    "shared": "shared",
+    "extension": "export"
+  }
+}

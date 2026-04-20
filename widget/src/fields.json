@@ -1,0 +1,123 @@
+{
+  "widgetName": {
+    "type": "hidden",
+    "value": "Stick out"
+  },
+  "widgetAuthor": {
+    "type": "hidden",
+    "value": "wielorzeczownik"
+  },
+  "widgetVersion": {
+    "type": "hidden",
+    "value": "0.1.0"
+  },
+  "btnTestAnimation": {
+    "type": "button",
+    "label": "Test animation",
+    "group": "General"
+  },
+  "commandName": {
+    "label": "Chat command name",
+    "type": "text",
+    "value": "pull",
+    "group": "General"
+  },
+  "enableCommand": {
+    "label": "Enable chat command",
+    "type": "checkbox",
+    "value": true,
+    "group": "General"
+  },
+  "enableReward": {
+    "label": "Enable Channel Points (Twitch only)",
+    "type": "checkbox",
+    "value": true,
+    "group": "General"
+  },
+  "rewardName": {
+    "label": "Channel Points reward name (exact)",
+    "type": "text",
+    "value": "Stick out",
+    "group": "General"
+  },
+  "soundUrl": {
+    "label": "Sound (mp3/ogg)",
+    "type": "sound-input",
+    "value": "",
+    "group": "Sound"
+  },
+  "soundVolume": {
+    "label": "Sound volume (%)",
+    "type": "number",
+    "value": 80,
+    "min": 0,
+    "max": 100,
+    "group": "Sound"
+  },
+  "pullDuration": {
+    "label": "Pull duration (seconds)",
+    "type": "number",
+    "value": 3,
+    "min": 1,
+    "max": 10,
+    "group": "Animation"
+  },
+  "holdDuration": {
+    "label": "Hold duration after pull (seconds)",
+    "type": "number",
+    "value": 1.2,
+    "min": 0,
+    "max": 30,
+    "group": "Animation"
+  },
+  "stickLength": {
+    "label": "Stick length (px)",
+    "type": "number",
+    "value": 300,
+    "min": 100,
+    "max": 600,
+    "group": "Appearance"
+  },
+  "stickColor": {
+    "label": "Stick color (wood skin only)",
+    "type": "colorpicker",
+    "value": "#8B4513",
+    "group": "Appearance"
+  },
+  "stickAngle": {
+    "label": "Stick angle (degrees, 0 = up, -90 = left, 90 = right)",
+    "type": "number",
+    "value": -65,
+    "min": -180,
+    "max": 180,
+    "group": "Appearance"
+  },
+  "stickSkin": {
+    "label": "Stick skin",
+    "type": "dropdown",
+    "value": "wood",
+    "options": {
+      "wood": "Wood",
+      "minecraft": "Minecraft — Stick",
+      "minecraft_pickaxe": "Minecraft — Pickaxe",
+      "custom": "Custom (below)"
+    },
+    "group": "Appearance"
+  },
+  "customSkinUrl": {
+    "label": "Custom skin (PNG with transparency)",
+    "type": "image-input",
+    "value": "",
+    "group": "Appearance"
+  },
+  "censorStyle": {
+    "label": "Censorship",
+    "type": "dropdown",
+    "value": "none",
+    "options": {
+      "none": "None",
+      "pixel": "Pixelate"
+    },
+    "group": "Appearance"
+  }
+}

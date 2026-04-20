@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.scss" />
+    <script type="module" src="./scripts/index.ts"></script>
+  </head>
+  <body>
+    <div id="widget">
+      <script src="https://cdn.jsdelivr.net/npm/@tixyel/streamelements@7.10.0/dist/index.umd.js"></script>
+      <canvas id="scene"></canvas>
+    </div>
+
+    <div id="dev-panel" class="dev-panel">
+      <div class="dev-panel__header">Dev Panel – Stick out</div>
+
+      <div class="dev-panel__section">
+        <div class="dev-panel__section-title">Stick angle (degrees)</div>
+        <input id="dev-angle" type="range" min="-180" max="180" value="-65" />
+        <span id="dev-angle-value">-65°</span>
+      </div>
+
+      <div class="dev-panel__section">
+        <div class="dev-panel__section-title">Skin</div>
+        <select id="dev-skin">
+          <option value="wood">Wood</option>
+          <option value="minecraft">Minecraft – Stick</option>
+          <option value="minecraft_pickaxe">Minecraft – Pickaxe</option>
+          <option value="custom">Custom (URL below)</option>
+        </select>
+        <input
+          id="dev-custom-skin-url"
+          type="text"
+          placeholder="URL własnej tekstury"
+          spellcheck="false"
+        />
+      </div>
+
+      <div class="dev-panel__section">
+        <div class="dev-panel__section-title">Hold duration (s)</div>
+        <input
+          id="dev-hold-duration"
+          type="number"
+          min="0"
+          max="30"
+          step="0.1"
+          value="1.2"
+        />
+      </div>
+
+      <div class="dev-panel__section">
+        <div class="dev-panel__section-title">Censorship</div>
+        <select id="dev-censor-style">
+          <option value="none">None</option>
+          <option value="pixel">Pixelate</option>
+        </select>
+      </div>
+
+      <div class="dev-panel__section">
+        <div class="dev-panel__section-title">Animation</div>
+        <button id="dev-anim-direct">Direct (UI only)</button>
+        <button id="dev-anim-command">via chat command</button>
+        <button id="dev-anim-points">via Channel Points</button>
+      </div>
+    </div>
+  </body>
+</html>

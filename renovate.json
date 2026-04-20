@@ -1,0 +1,31 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "platformAutomerge": true,
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["^widget/src/index\\.html$"],
+      "matchStrings": [
+        "cdn\\.jsdelivr\\.net/npm/@tixyel/streamelements@(?<currentValue>[^/]+)"
+      ],
+      "depNameTemplate": "@tixyel/streamelements",
+      "datasourceTemplate": "npm"
+    }
+  ],
+  "automergeType": "pr",
+  "semanticCommits": "enabled",
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "semanticCommitType": "build"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "semanticCommitType": "ci"
+    }
+  ]
+}

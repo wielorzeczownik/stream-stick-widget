@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "lib": ["ES2019", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": ["vite/client", "node"],
+    "paths": {
+      "@/*": ["./widget/src/scripts/*"],
+      "@assets/*": ["./widget/src/assets/*"],
+      "@styles/*": ["./widget/src/styles/*"]
+    }
+  },
+  "include": ["./widget/src/scripts/**/*.ts", "./*.config.ts"]
+}
