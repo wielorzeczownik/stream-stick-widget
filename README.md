@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/wielorzecz/assets/logo.png" alt="Stream Stick – 3D stick pull overlay for StreamElements on Twitch, YouTube and Kick" width="400"/>
+  <img src="https://raw.githubusercontent.com/wielorzeczownik/stream-stick-widget/main/assets/logo.png" alt="Stream Stick – 3D stick pull overlay for StreamElements on Twitch, YouTube and Kick" width="400"/>
 </p>
 
 <p align="center">🇬🇧 English | 🇵🇱 <a href="README.pl.md">Polski</a></p>
