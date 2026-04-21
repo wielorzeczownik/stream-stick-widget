@@ -14,7 +14,7 @@
     "fix": "eslint --fix widget/src/scripts && prettier --write widget/src/scripts"
   },
   "devDependencies": {
-    "@tixyel/cli": "3.5.4",
+    "@tixyel/cli": "3.6.0",
     "@types/node": "25.6.0",
     "eslint": "10.2.1",
     "eslint-config-prettier": "10.1.8",
