@@ -50,7 +50,7 @@ export function initDevelopmentPanel(config: Config): void {
   ) as HTMLInputElement | null;
   const angleValue = document.getElementById(
     'dev-angle-value'
-  ) as HTMLSpanElement | null;
+  );
   if (angleInput) {
     angleInput.value = String(config.stickAngle);
     if (angleValue) angleValue.textContent = `${config.stickAngle}°`;
