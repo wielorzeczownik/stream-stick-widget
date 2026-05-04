@@ -40,6 +40,7 @@ export default defineConfig({
       plugins: [
         externalGlobals({
           '@tixyel/streamelements': "globalThis['@tixyel/streamelements']",
+          three: 'THREE',
         }),
       ],
     },

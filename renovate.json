@@ -13,6 +13,15 @@
       ],
       "depNameTemplate": "@tixyel/streamelements",
       "datasourceTemplate": "npm"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["^widget/src/index\\.html$"],
+      "matchStrings": [
+        "cdn\\.jsdelivr\\.net/npm/three@(?<currentValue>[^/]+)/build/three\\.module\\.min\\.js"
+      ],
+      "depNameTemplate": "three",
+      "datasourceTemplate": "npm"
     }
   ],
   "packageRules": [
