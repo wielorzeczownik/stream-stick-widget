@@ -17,7 +17,7 @@
 
 <p align="center">🇬🇧 <a href="README.md">English</a> | 🇵🇱 Polski</p>
 
-Darmowy widget do StreamElements dla Twitcha, YouTube i Kicka — komenda na czacie lub Channel Points wyzwalają animację 3D wysuwającego się kija na ekranie. Obsługuje własne skórki w stylu pixel-art i opcjonalną pixelizację.
+Darmowy widget do StreamElements dla Twitcha, YouTube i Kicka – komenda na czacie lub Channel Points wyzwalają animację 3D wysuwającego się kija na ekranie. Obsługuje własne skórki w stylu pixel-art i opcjonalną pixelizację.
 
 ## Jak to działa?
 
