@@ -1,5 +1,3 @@
-import type * as THREE from 'three';
-
 export type Skin = 'wood' | 'minecraft' | 'minecraft_pickaxe' | 'custom';
 
 export type CensorStyle = 'none' | 'pixel';
@@ -19,9 +17,4 @@ export type Config = {
   stickSkin: Skin;
   customSkinUrl: string;
   censorStyle: CensorStyle;
-};
-
-export type SkinResult = {
-  objects: THREE.Object3D[];
-  depthTilt: number;
 };

@@ -1,6 +1,6 @@
 import Tixyel from '@tixyel/streamelements';
 
-import { WIDGET_ID } from '@/constants';
+const WIDGET_ID = 'stick-out';
 
 const client = new Tixyel.Client({
   id: WIDGET_ID,

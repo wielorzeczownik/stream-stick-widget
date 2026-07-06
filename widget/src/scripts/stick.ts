@@ -10,14 +10,6 @@ import {
   tweenFrames,
   wait,
 } from '@/animation';
-import {
-  CLEANUP_DELAY,
-  FADE_IN,
-  FADE_OUT,
-  POP_DURATION,
-  PULL_RATIO,
-  WOBBLE_DURATION,
-} from '@/constants';
 import { buildSkin, disposeSkinObjects } from '@/skins';
 import { randomSoundUrl } from '@/sounds';
 import type { CensorStyle, Config, Skin } from '@/types';
@@ -25,6 +17,13 @@ import type { CensorStyle, Config, Skin } from '@/types';
 type QueueItem = Record<string, never>;
 
 const PIXEL_BLOCK = 16;
+
+const FADE_IN = 0.3;
+const PULL_RATIO = 0.88;
+const POP_DURATION = 0.45;
+const WOBBLE_DURATION = 0.55;
+const FADE_OUT = 0.4;
+const CLEANUP_DELAY = 0.15;
 
 export class Stick {
   private readonly canvas: HTMLCanvasElement | null;

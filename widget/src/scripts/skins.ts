@@ -2,8 +2,15 @@ import pickaxeMinecraftUrl from '@assets/textures/minecraft_pickaxe.png?inline';
 import stickMinecraftUrl from '@assets/textures/minecraft_stick.png?inline';
 import * as THREE from 'three';
 
-import { DEPTH_TILT, SPRITE_MAX_RES } from '@/constants';
-import type { Skin, SkinResult } from '@/types';
+import type { Skin } from '@/types';
+
+const DEPTH_TILT = 0.42; // ~24 degrees
+const SPRITE_MAX_RES = 16;
+
+type SkinResult = {
+  objects: THREE.Object3D[];
+  depthTilt: number;
+};
 
 export function disposeSkinObjects(objects: THREE.Object3D[]): void {
   for (const object of objects) {

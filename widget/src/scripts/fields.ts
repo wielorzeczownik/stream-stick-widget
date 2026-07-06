@@ -1,18 +1,17 @@
 import type { StreamElements } from '@tixyel/streamelements';
 
-import {
-  DEFAULT_CENSOR_STYLE,
-  DEFAULT_COMMAND,
-  DEFAULT_HOLD_DURATION,
-  DEFAULT_PULL_DURATION,
-  DEFAULT_REWARD,
-  DEFAULT_SOUND_VOLUME,
-  DEFAULT_STICK_ANGLE,
-  DEFAULT_STICK_COLOR,
-  DEFAULT_STICK_LENGTH,
-  DEFAULT_STICK_SKIN,
-} from '@/constants';
 import type { CensorStyle, Config, Skin } from '@/types';
+
+const DEFAULT_COMMAND = 'pull';
+const DEFAULT_REWARD = 'Stick out';
+const DEFAULT_PULL_DURATION = 3;
+const DEFAULT_STICK_LENGTH = 300;
+const DEFAULT_STICK_COLOR = '#8B4513';
+const DEFAULT_STICK_ANGLE = -65;
+const DEFAULT_STICK_SKIN = 'wood';
+const DEFAULT_SOUND_VOLUME = 80;
+const DEFAULT_HOLD_DURATION = 1.2;
+const DEFAULT_CENSOR_STYLE = 'none';
 
 export function parseFields(
   raw: Record<string, StreamElements.CustomField.Value>
