@@ -5,6 +5,25 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.7](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.6...v0.2.7) - 2026-07-06
+
+### Build System
+
+- Update dependency stylelint to v17.14.0 ([1a87608](https://github.com/wielorzeczownik/stream-stick-widget/commit/1a876080ec8eeb549761f589c2435841a2df66f6))
+- Update dependency typescript-eslint to v8.62.1 ([24c9acd](https://github.com/wielorzeczownik/stream-stick-widget/commit/24c9acd74c73fbfaf06d556e849bf192468a85bb))
+- Update dependency prettier to v3.9.4 ([53f3806](https://github.com/wielorzeczownik/stream-stick-widget/commit/53f3806114e1f7cc375ba8df7e08eaa0c4a40fa8))
+- Update dependency vite to v8.1.3 ([405a9cb](https://github.com/wielorzeczownik/stream-stick-widget/commit/405a9cb448292115860bd5d2751140cc9d76ff83))
+- Update dependency eslint to v10.6.0 ([26a0407](https://github.com/wielorzeczownik/stream-stick-widget/commit/26a0407a62ffba57ace084de5bb5bb7cd1e31837))
+- Update dependency @types/node to v26.1.0 ([6ecca9b](https://github.com/wielorzeczownik/stream-stick-widget/commit/6ecca9b54738b4a8892210edffea832cda22afd1))
+
+### CI/CD
+
+- Update softprops/action-gh-release action to v3.0.1 ([034b3f6](https://github.com/wielorzeczownik/stream-stick-widget/commit/034b3f6c31557a5a682f734e78e692f06fe69c78))
+
+### Dependencies
+
+- Update dependency motion to v12.42.2 (#60) ([dd33a3b](https://github.com/wielorzeczownik/stream-stick-widget/commit/dd33a3b25f301386202b04e0effa1df3c547d66b))
+
 ## [0.2.6](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.5...v0.2.6) - 2026-07-06
 
 ### Bug Fixes
