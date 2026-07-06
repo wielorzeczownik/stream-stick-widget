@@ -5,7 +5,7 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.2.6](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.5...v0.2.6) - 2026-07-06
 
 ### Bug Fixes
 
@@ -42,6 +42,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### CI/CD
 
+- Split git-cliff configs and attest build artifacts ([224ee61](https://github.com/wielorzeczownik/stream-stick-widget/commit/224ee61e5eb998001d53940fd32e0b032fdafc24))
 - Update actions/checkout action to v7 ([a18ae05](https://github.com/wielorzeczownik/stream-stick-widget/commit/a18ae058a3fd6a4a98429e3256f18a9ed84a5898))
 - Update actions/checkout action to v6.0.3 (#41) ([35e3739](https://github.com/wielorzeczownik/stream-stick-widget/commit/35e3739a851f5c063f78354c38c1155dfa23caa7))
 - Update renovate.json ([c6b6782](https://github.com/wielorzeczownik/stream-stick-widget/commit/c6b678294340111d35f394bc49cdadc751c82ef8))
