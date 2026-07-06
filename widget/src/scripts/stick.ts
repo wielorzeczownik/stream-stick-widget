@@ -176,14 +176,16 @@ export class Stick {
     this.doRender();
   }
 
-  private playSound(): void {
+  private async playSound(): Promise<void> {
     const { soundUrl, soundVolume } = this.config;
     const url = soundUrl || randomSoundUrl();
     const audio = new Audio(url);
     audio.volume = soundVolume / 100;
-    audio.play().catch((error: unknown) => {
+    try {
+      await audio.play();
+    } catch (error: unknown) {
       Tixyel.logger.warn(`[Kij] Sound failed: ${String(error)}`);
-    });
+    }
   }
 
   private setOpacity(value: number): void {
@@ -211,7 +213,7 @@ export class Stick {
     await tween(-skinHeight, -18, pullDuration * PULL_RATIO, easeInOut3, setY);
 
     // Fast snap out with sound
-    this.playSound();
+    void this.playSound();
     // -18 = just below surface, 22 = overshoot, -8 = undershoot, 0 = settled
     await tweenFrames([-18, 22, -8, 0], POP_DURATION * 0.6, easeOut3, setY);
 
@@ -288,32 +290,32 @@ export class Stick {
   }
 }
 
-let instance: Stick;
+const state: { instance?: Stick } = {};
 
 export function init(config: Config): void {
-  instance = new Stick(config);
+  state.instance = new Stick(config);
 }
 
 export function trigger(): void {
-  instance.trigger();
+  state.instance!.trigger();
 }
 
 export function setSkin(skin: Skin): void {
-  instance.setSkin(skin);
+  state.instance!.setSkin(skin);
 }
 
 export function setAngle(degrees: number): void {
-  instance.setAngle(degrees);
+  state.instance!.setAngle(degrees);
 }
 
 export function setCustomSkinUrl(url: string): void {
-  instance.setCustomSkinUrl(url);
+  state.instance!.setCustomSkinUrl(url);
 }
 
 export function setHoldDuration(seconds: number): void {
-  instance.setHoldDuration(seconds);
+  state.instance!.setHoldDuration(seconds);
 }
 
 export function setCensorStyle(style: CensorStyle): void {
-  instance.setCensorStyle(style);
+  state.instance!.setCensorStyle(style);
 }

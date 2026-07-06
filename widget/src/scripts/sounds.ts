@@ -5,6 +5,5 @@ import pop3Url from '@assets/sounds/pop3.mp3?inline';
 const builtInSounds = [pop1Url, pop2Url, pop3Url];
 
 export function randomSoundUrl(): string {
-  // eslint-disable-next-line sonarjs/pseudo-random
   return builtInSounds[Math.floor(Math.random() * builtInSounds.length)];
 }

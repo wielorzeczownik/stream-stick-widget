@@ -6,14 +6,16 @@
     "build": "vite build && tixyel b -b none",
     "compile": "vite build",
     "test:watch": "vitest",
-    "lint": "eslint widget/src/scripts",
+    "lint": "eslint widget/src/scripts widget/src/index.html",
     "lint:scss": "stylelint \"widget/src/styles/**/*.scss\"",
-    "format": "prettier --write widget/src/scripts",
-    "format:check": "prettier --check widget/src/scripts",
+    "format": "prettier --write widget/src/scripts widget/src/index.html",
+    "format:check": "prettier --check widget/src/scripts widget/src/index.html",
     "typecheck": "tsc --noEmit",
-    "fix": "eslint --fix widget/src/scripts && prettier --write widget/src/scripts"
+    "fix": "eslint --fix widget/src/scripts widget/src/index.html && stylelint --fix \"widget/src/styles/**/*.scss\" && prettier --write widget/src/scripts widget/src/index.html"
   },
   "devDependencies": {
+    "@html-eslint/eslint-plugin": "0.63.0",
+    "@html-eslint/parser": "0.63.0",
     "@tixyel/cli": "3.6.0",
     "@types/node": "26.0.0",
     "eslint": "10.5.0",

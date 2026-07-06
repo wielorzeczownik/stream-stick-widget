@@ -28,20 +28,18 @@ export function tween(
   });
 }
 
-export function tweenFrames(
+export async function tweenFrames(
   keyframes: number[],
   duration: number,
   ease: (progress: number) => number,
   onUpdate: (value: number) => void
 ): Promise<void> {
   const segDur = duration / (keyframes.length - 1);
-  let chain = Promise.resolve();
   for (let index = 0; index < keyframes.length - 1; index++) {
     const from = keyframes[index];
     const next = keyframes[index + 1];
-    chain = chain.then(() => tween(from, next, segDur, ease, onUpdate));
+    await tween(from, next, segDur, ease, onUpdate);
   }
-  return chain;
 }
 
 export const wait = (seconds: number) =>

@@ -19,9 +19,9 @@ export function parseFields(
 ): Config {
   const getString = (key: string, fallback = '') =>
     String(raw[key] ?? fallback);
-  const getBoolean = (key: string, fallback: boolean) =>
+  const isEnabled = (key: string, isEnabledByDefault: boolean) =>
     raw[key] === undefined
-      ? fallback
+      ? isEnabledByDefault
       : raw[key] !== false && raw[key] !== 'false';
   const getNumber = (key: string, fallback: number) => {
     const parsed = Number(raw[key]);
@@ -30,8 +30,8 @@ export function parseFields(
 
   return {
     commandName: getString('commandName', DEFAULT_COMMAND),
-    enableCommand: getBoolean('enableCommand', true),
-    enableReward: getBoolean('enableReward', true),
+    enableCommand: isEnabled('enableCommand', true),
+    enableReward: isEnabled('enableReward', true),
     rewardName: getString('rewardName', DEFAULT_REWARD),
     soundUrl: getString('soundUrl'),
     soundVolume: Math.min(
