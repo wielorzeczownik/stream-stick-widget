@@ -25,6 +25,8 @@ const WOBBLE_DURATION = 0.55;
 const FADE_OUT = 0.4;
 const CLEANUP_DELAY = 0.15;
 
+const degToRad = (deg: number) => (deg * Math.PI) / 180;
+
 export class Stick {
   private readonly canvas: HTMLCanvasElement | null;
   private readonly renderer: THREE.WebGLRenderer;
@@ -136,7 +138,7 @@ export class Stick {
     this.pivot.position.y = -height / 2;
     this.scene3d.add(this.pivot);
 
-    this.baseAngleZ = (config.stickAngle * Math.PI) / 180;
+    this.baseAngleZ = degToRad(config.stickAngle);
     this.pivot.rotation.order = 'ZXY'; // keeps depth tilt (X) independent of lean (Z)
     this.pivot.rotation.z = this.baseAngleZ;
     this.pivot.rotation.x = skin.depthTilt;
@@ -219,7 +221,7 @@ export class Stick {
     // Wobble
     await tweenFrames(
       [-4, 4, -2.5, 2.5, -1, 1, 0].map(
-        (deg) => this.baseAngleZ - this.spriteAngleZ + (deg * Math.PI) / 180
+        (deg) => this.baseAngleZ - this.spriteAngleZ + degToRad(deg)
       ),
       WOBBLE_DURATION,
       linear,
@@ -266,7 +268,7 @@ export class Stick {
   }
 
   setAngle(degrees: number): void {
-    this.baseAngleZ = (degrees * Math.PI) / 180;
+    this.baseAngleZ = degToRad(degrees);
     this.pivot.rotation.z = this.baseAngleZ - this.spriteAngleZ;
     this.doRender();
   }

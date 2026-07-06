@@ -1,3 +1,5 @@
+const MS_PER_SECOND = 1000;
+
 export const easeOut3 = (progress: number) => 1 - Math.pow(1 - progress, 3);
 export const easeIn3 = (progress: number) => progress * progress * progress;
 export const easeInOut3 = (progress: number) =>
@@ -17,7 +19,7 @@ export function tween(
     const start = performance.now();
     const tick = () => {
       const progress = Math.min(
-        (performance.now() - start) / (duration * 1000), // duration in seconds, perf.now in ms
+        (performance.now() - start) / (duration * MS_PER_SECOND), // duration in seconds, perf.now in ms
         1
       );
       onUpdate(from + (end - from) * ease(progress));
@@ -43,4 +45,4 @@ export async function tweenFrames(
 }
 
 export const wait = (seconds: number) =>
-  new Promise<void>((resolve) => setTimeout(resolve, seconds * 1000));
+  new Promise<void>((resolve) => setTimeout(resolve, seconds * MS_PER_SECOND));

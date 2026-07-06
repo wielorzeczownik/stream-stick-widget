@@ -6,6 +6,7 @@ import type { Skin } from '@/types';
 
 const DEPTH_TILT = 0.42; // ~24 degrees
 const SPRITE_MAX_RES = 16;
+const MIN_ALPHA = 10; // skip near-transparent pixels
 
 type SkinResult = {
   objects: THREE.Object3D[];
@@ -69,7 +70,7 @@ export function buildVoxelSprite(
       for (let row = 0; row < height; row++) {
         for (let col = 0; col < width; col++) {
           const index = (row * width + col) * 4;
-          if (data[index + 3] > 10) {
+          if (data[index + 3] > MIN_ALPHA) {
             pixels.push({
               pixelX: col,
               pixelY: row,
