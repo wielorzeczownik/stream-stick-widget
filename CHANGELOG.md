@@ -5,6 +5,20 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.9](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.8...v0.2.9) - 2026-07-11
+
+### Performance
+
+- Compress logo.png ([10c7291](https://github.com/wielorzeczownik/stream-stick-widget/commit/10c7291d8ed16e7c0f5338421c109f9cac122284))
+
+### Build System
+
+- Update dependency @types/node to v26.1.1 (#72) ([4e5bc56](https://github.com/wielorzeczownik/stream-stick-widget/commit/4e5bc5685d14fe2f39d6224619ee848b9b0f687d))
+- Update dependency eslint-plugin-unicorn to v71.1.0 (#70) ([576c9ea](https://github.com/wielorzeczownik/stream-stick-widget/commit/576c9eae8cde3b0cd41f2c7c922dbfdcbcae2c95))
+- Update dependency typescript-eslint to v8.63.0 (#69) ([78b9ddd](https://github.com/wielorzeczownik/stream-stick-widget/commit/78b9ddddfb44239248a872d8888a1451d0699357))
+- Update dependency eslint-plugin-unicorn to v71 ([4c5b075](https://github.com/wielorzeczownik/stream-stick-widget/commit/4c5b075e14e52daf974b19c2c9e91e1c8365a596))
+- Update dependency eslint-plugin-unicorn to v70 ([4dabbad](https://github.com/wielorzeczownik/stream-stick-widget/commit/4dabbade51924e72edc6698d628ec974100553d2))
+
 ## [0.2.8](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.7...v0.2.8) - 2026-07-06
 
 ### Dependencies
