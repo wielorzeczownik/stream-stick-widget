@@ -5,6 +5,16 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.10](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.9...v0.2.10) - 2026-07-12
+
+### CI/CD
+
+- Update davidanson/markdownlint-cli2-action action to v24 ([5f356c7](https://github.com/wielorzeczownik/stream-stick-widget/commit/5f356c7329cc36d39fcb661151a5964cd305104b))
+
+### Dependencies
+
+- Update dependency @types/three to v0.185.1 (#74) ([445fec5](https://github.com/wielorzeczownik/stream-stick-widget/commit/445fec5be4948a045671ccfc8e0590e3dd4520b7))
+
 ## [0.2.9](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.8...v0.2.9) - 2026-07-11
 
 ### Performance
