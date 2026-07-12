@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@tixyel/streamelements": "7.14.1",
-    "@types/three": "0.185.0",
+    "@types/three": "0.185.1",
     "motion": "12.42.2",
     "three": "0.185.1"
   }
