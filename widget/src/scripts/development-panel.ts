@@ -69,7 +69,7 @@ export function initDevelopmentPanel(config: Config): void {
   if (skinSelect) {
     skinSelect.value = config.stickSkin;
     skinSelect.addEventListener('change', () => {
-      if (skinSelect.value === 'custom' && customSkinInput) {
+      if (customSkinInput && skinSelect.value === 'custom') {
         setCustomSkinUrl(customSkinInput.value);
       }
       setSkin(skinSelect.value as Skin);
