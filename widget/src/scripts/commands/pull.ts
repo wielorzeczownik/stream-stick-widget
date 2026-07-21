@@ -17,7 +17,7 @@ export function initPull(config: Config): void {
   }
 
   client.on('event', (provider, event) => {
-    if (!config.enableReward || provider !== 'twitch') return;
+    if (provider !== 'twitch' || !config.enableReward) return;
 
     const twitchEvent = event as StreamElements.Event.Provider.Twitch.Event;
     if (twitchEvent.listener !== 'event') return;
