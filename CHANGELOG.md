@@ -5,6 +5,31 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.11](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.10...v0.2.11) - 2026-07-21
+
+### Bug Fixes
+
+- Unicorn/prefer-simple-condition-first ([b68cfb1](https://github.com/wielorzeczownik/stream-stick-widget/commit/b68cfb17339ce7364db730333c31428acdcdf6cf))
+
+### Build System
+
+- Update dependency eslint-plugin-unicorn to v72 ([58a0735](https://github.com/wielorzeczownik/stream-stick-widget/commit/58a0735f352168d714f72178ea46e6cb4cde7e62))
+- Resolve audit advisories ([9dc232f](https://github.com/wielorzeczownik/stream-stick-widget/commit/9dc232fb99c9aa1a23e7d6dc3cb4424bc6eb996c))
+- Update dependency eslint-plugin-simple-import-sort to v14 ([97c0f92](https://github.com/wielorzeczownik/stream-stick-widget/commit/97c0f92594fe4d43e0028cf5e3171ac6d901b172))
+- Update dependency vite to v8.1.5 (#83) ([27f3ef2](https://github.com/wielorzeczownik/stream-stick-widget/commit/27f3ef211a96aa97444abcb515dc5862153520dd))
+- Update dependency eslint-plugin-sonarjs to v4.2.0 (#81) ([1ea69f1](https://github.com/wielorzeczownik/stream-stick-widget/commit/1ea69f1e1f998b94a0943a93f7415fbc30e1d02d))
+- Update dependency typescript-eslint to v8.64.0 ([716ffac](https://github.com/wielorzeczownik/stream-stick-widget/commit/716ffac4adf80cec0d97f49c464fe330c4c4d1e2))
+- Update dependency eslint to v10.7.0 (#79) ([04e97f5](https://github.com/wielorzeczownik/stream-stick-widget/commit/04e97f508a2c54a28ed3a9a719c91e63c623cd87))
+- Update dependency @html-eslint/parser to v0.64.0 (#78) ([8af4bc5](https://github.com/wielorzeczownik/stream-stick-widget/commit/8af4bc55fbc8acc7a6f1650cb4e0e1a1263619f5))
+- Update dependency @html-eslint/eslint-plugin to v0.64.0 (#77) ([e6547cb](https://github.com/wielorzeczownik/stream-stick-widget/commit/e6547cb397bf4340b885e142e2837d7d1d488e66))
+- Update dependency prettier to v3.9.5 (#76) ([7e93cb4](https://github.com/wielorzeczownik/stream-stick-widget/commit/7e93cb44c02a9b2b65b31d78976e4ff7af15dd66))
+- Update dependency vite to v8.1.4 (#75) ([1baf3d0](https://github.com/wielorzeczownik/stream-stick-widget/commit/1baf3d0a838dc1dcd130991ebdd5ca94ead108c3))
+
+### CI/CD
+
+- Update actions/setup-node action to v7 ([47bb35b](https://github.com/wielorzeczownik/stream-stick-widget/commit/47bb35b5fd73fa4d7fc03d36f71f5a9e0c64e5b3))
+- Update softprops/action-gh-release action to v3.0.2 ([056e87c](https://github.com/wielorzeczownik/stream-stick-widget/commit/056e87cf6d25ea3fbd5d8ef80e8f0c6749c46fdc))
+
 ## [0.2.10](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.9...v0.2.10) - 2026-07-12
 
 ### CI/CD
