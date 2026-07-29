@@ -5,13 +5,14 @@
     "dev": "vite --mode development",
     "build": "vite build && tixyel b -b none",
     "compile": "vite build",
+    "test": "vitest run",
     "test:watch": "vitest",
-    "lint": "eslint widget/src/scripts widget/src/index.html",
+    "lint": "eslint widget/src/scripts widget/src/index.html tests",
     "lint:scss": "stylelint \"widget/src/styles/**/*.scss\"",
-    "format": "prettier --write widget/src/scripts widget/src/index.html",
-    "format:check": "prettier --check widget/src/scripts widget/src/index.html",
+    "format": "prettier --write widget/src/scripts widget/src/index.html tests",
+    "format:check": "prettier --check widget/src/scripts widget/src/index.html tests",
     "typecheck": "tsc --noEmit",
-    "fix": "eslint --fix widget/src/scripts widget/src/index.html && stylelint --fix \"widget/src/styles/**/*.scss\" && prettier --write widget/src/scripts widget/src/index.html"
+    "fix": "eslint --fix widget/src/scripts widget/src/index.html tests && stylelint --fix \"widget/src/styles/**/*.scss\" && prettier --write widget/src/scripts widget/src/index.html tests"
   },
   "devDependencies": {
     "@html-eslint/eslint-plugin": "0.64.0",
@@ -34,7 +35,8 @@
     "typescript": "6.0.3",
     "typescript-eslint": "8.65.0",
     "vite": "8.1.5",
-    "vite-plugin-static-copy": "4.1.1"
+    "vite-plugin-static-copy": "4.1.1",
+    "vitest": "4.1.10"
   },
   "dependencies": {
     "@tixyel/streamelements": "7.14.1",

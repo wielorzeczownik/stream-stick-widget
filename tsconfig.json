@@ -11,8 +11,13 @@
     "paths": {
       "@/*": ["./widget/src/scripts/*"],
       "@assets/*": ["./widget/src/assets/*"],
-      "@styles/*": ["./widget/src/styles/*"]
+      "@styles/*": ["./widget/src/styles/*"],
+      "@tests/*": ["./tests/*"]
     }
   },
-  "include": ["./widget/src/scripts/**/*.ts", "./*.config.ts"]
+  "include": [
+    "./widget/src/scripts/**/*.ts",
+    "./tests/**/*.ts",
+    "./*.config.ts"
+  ]
 }
