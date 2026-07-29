@@ -75,6 +75,29 @@ Włącz **Enable chat command** w ustawieniach widgetu. Widzowie używają `!pul
 
 Komenda czatu jest domyślnie włączona. Nie wymaga dodatkowej konfiguracji.
 
+## Ustawienia
+
+Każde ustawienie poniżej to pole w edytorze widgetu. Wartości spoza zakresu są przycinane, a nie odrzucane – widget zawsze się uruchomi.
+
+| Pole                                    | Typ      | Domyślnie   | Zakres             | Znaczenie                                                                                       |
+| --------------------------------------- | -------- | ----------- | ------------------ | ----------------------------------------------------------------------------------------------- |
+| **Enable chat command**                 | checkbox | wł.         | wł. / wył.         | Rejestruje komendę czatu na każdej platformie.                                                  |
+| **Chat command name**                   | tekst    | `pull`      | dowolne            | Komenda wpisywana przez widzów, bez prefiksu `!`.                                               |
+| **Enable Channel Points (Twitch only)** | checkbox | wł.         | wł. / wył.         | Nasłuchuje odbioru Channel Points. Ignorowane na YouTube i Kicku.                               |
+| **Channel Points reward name (exact)**  | tekst    | `Stick out` | dowolne            | Musi zgadzać się z nazwą nagrody na Twitchu **dokładnie**, łącznie z wielkością liter.          |
+| **Sound (mp3/ogg)**                     | dźwięk   | _(puste)_   | URL lub plik       | Odtwarzany przy każdym wyciągnięciu. Puste = losowy wbudowany dźwięk.                           |
+| **Sound volume (%)**                    | liczba   | `80`        | `0`–`100`          | Przycinane do zakresu.                                                                          |
+| **Pull duration (seconds)**             | liczba   | `3`         | `1`+               | Czas wysuwania patyka. Wartości poniżej `1` są podnoszone do `1`.                               |
+| **Hold duration after pull (seconds)**  | liczba   | `1.2`       | `0`+               | Jak długo patyk zostaje na ekranie. Wartości ujemne stają się `0`.                              |
+| **Stick length (px)**                   | liczba   | `300`       | `100`+             | Długość na ekranie. Wartości poniżej `100` są podnoszone do `100`.                              |
+| **Stick color**                         | kolor    | `#8B4513`   | dowolny kolor      | Działa tylko dla skórki **wood**; skórki sprite'owe zachowują własne kolory pikseli.            |
+| **Stick angle (degrees)**               | liczba   | `-65`       | dowolne            | `0` = pionowo w górę, `-90` = w lewo, `90` = w prawo. Bez przycinania.                          |
+| **Stick skin**                          | lista    | `Wood`      | patrz obok         | `Wood`, `Minecraft — Stick`, `Minecraft — Pickaxe` lub `Custom (below)`.                        |
+| **Custom skin (PNG with transparency)** | obraz    | _(puste)_   | URL lub plik       | Używane tylko przy skórce `Custom`. Zamieniane na voxele w locie, maks. 16 px na dłuższym boku. |
+| **Censorship**                          | lista    | `None`      | `None`, `Pixelate` | Opcjonalna mozaika na obszarze patyka.                                                          |
+
+> Własna skórka jest pobierana z `crossOrigin="anonymous"`. Jeśli serwer nie wyśle nagłówków CORS, sprite po cichu się nie pojawi – dlatego lepiej wgrać obrazek przez edytor widgetu.
+
 ## Budowanie ze źródeł
 
 Wymagania: [Node.js](https://nodejs.org) 24+.
