@@ -1,6 +1,22 @@
 {
+  "name": "stream-stick-widget",
   "version": "0.2.11",
+  "description": "A free StreamElements browser-source widget for Twitch, YouTube and Kick - a 3D stick pull overlay.",
+  "license": "MIT",
+  "author": "wielorzeczownik",
+  "homepage": "https://github.com/wielorzeczownik/stream-stick-widget#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wielorzeczownik/stream-stick-widget.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wielorzeczownik/stream-stick-widget/issues"
+  },
+  "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "dev": "vite --mode development",
     "build": "vite build && tixyel b -b none",

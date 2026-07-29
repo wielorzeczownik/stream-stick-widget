@@ -75,6 +75,29 @@ Enable **Enable chat command** in the widget settings. Viewers use `!pull` (or y
 
 Chat command is enabled by default. No extra setup needed.
 
+## Configuration
+
+Every setting below is a field in the widget editor. Values outside the accepted range are clamped, not rejected – the widget always starts.
+
+| Field                                   | Type     | Default     | Accepted           | Meaning                                                                                                   |
+| --------------------------------------- | -------- | ----------- | ------------------ | --------------------------------------------------------------------------------------------------------- |
+| **Enable chat command**                 | checkbox | on          | on / off           | Registers the chat command on every platform.                                                             |
+| **Chat command name**                   | text     | `pull`      | any                | Command viewers type, without the `!` prefix.                                                             |
+| **Enable Channel Points (Twitch only)** | checkbox | on          | on / off           | Listens for Channel Points redemptions. Ignored on YouTube and Kick.                                      |
+| **Channel Points reward name (exact)**  | text     | `Stick out` | any                | Must match the reward name on Twitch **exactly**, including capitalisation.                               |
+| **Sound (mp3/ogg)**                     | sound    | _(empty)_   | URL or upload      | Played on each pull. Empty means a random built-in pop sound.                                             |
+| **Sound volume (%)**                    | number   | `80`        | `0`–`100`          | Clamped into range.                                                                                       |
+| **Pull duration (seconds)**             | number   | `3`         | `1`+               | How long the stick takes to rise. Values below `1` are raised to `1`.                                     |
+| **Hold duration after pull (seconds)**  | number   | `1.2`       | `0`+               | How long the stick stays on screen before disappearing. Negatives become `0`.                             |
+| **Stick length (px)**                   | number   | `300`       | `100`+             | On-screen length. Values below `100` are raised to `100`.                                                 |
+| **Stick color**                         | colour   | `#8B4513`   | any colour         | Applies to the **wood** skin only; sprite skins keep their own pixel colours.                             |
+| **Stick angle (degrees)**               | number   | `-65`       | any                | `0` = straight up, `-90` = left, `90` = right. Not clamped.                                               |
+| **Stick skin**                          | dropdown | `Wood`      | see below          | `Wood`, `Minecraft — Stick`, `Minecraft — Pickaxe`, or `Custom (below)`.                                  |
+| **Custom skin (PNG with transparency)** | image    | _(empty)_   | URL or upload      | Used only when the skin is `Custom`. Converted to voxels at runtime, capped at 16 px on the longest side. |
+| **Censorship**                          | dropdown | `None`      | `None`, `Pixelate` | Optional mosaic over the stick area.                                                                      |
+
+> A custom skin is fetched with `crossOrigin="anonymous"`. If the host does not send CORS headers the sprite silently falls back to nothing, so prefer uploading the image through the widget editor.
+
 ## Building from source
 
 Requirements: [Node.js](https://nodejs.org) 24+.
