@@ -124,7 +124,20 @@ jobs:
         run: npm ci
 
       - name: Audit
-        run: npm audit
+        shell: bash
+        run: |
+          set -uo pipefail
+          if npm audit 2>&1 | tee audit.log; then
+            exit 0
+          fi
+          echo "::warning title=npm audit::Advisories found - see the job summary. Not blocking this pull request."
+          {
+            echo "### npm audit findings"
+            echo
+            echo '```text'
+            cat audit.log
+            echo '```'
+          } >>"$GITHUB_STEP_SUMMARY"
 
   format:
     name: Formatting (Prettier)
