@@ -1,17 +1,77 @@
 name: Validate
 
-on:
-  pull_request:
+on: pull_request
 
-permissions: {}
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  lint:
-    name: Lint
+  changes:
+    name: Detect changes
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     permissions:
       contents: read
+      pull-requests: read
+    outputs:
+      code: ${{ steps.filter.outputs.code }}
+      deps: ${{ steps.filter.outputs.deps }}
+      shell: ${{ steps.filter.outputs.shell }}
+      markdown: ${{ steps.filter.outputs.markdown }}
+      format: ${{ steps.filter.outputs.format }}
+      workflows: ${{ steps.filter.outputs.workflows }}
+    steps:
+      - name: Filter changed paths
+        id: filter
+        uses: dorny/paths-filter@v4.0.2
+        with:
+          filters: |
+            code:
+              - '.github/workflows/validate.yml'
+              - 'widget/src/**'
+              - 'tests/**'
+              - 'package.json'
+              - 'package-lock.json'
+              - 'tsconfig.json'
+              - 'eslint.config.ts'
+              - 'vite.config.ts'
+              - 'vitest.config.ts'
+              - 'tixyel.config.ts'
+              - '.stylelintrc.json'
+            deps:
+              - '.github/workflows/validate.yml'
+              - 'package.json'
+              - 'package-lock.json'
+            shell:
+              - '.github/workflows/validate.yml'
+              - 'scripts/**'
+            markdown:
+              - '.github/workflows/validate.yml'
+              - '**/*.md'
+            workflows:
+              - '.github/workflows/**'
+            format:
+              - '.github/workflows/validate.yml'
+              - '.prettierrc'
+              - '.prettierignore'
+              - '**/*.json'
+              - '**/*.md'
+              - '**/*.yml'
+              - '**/*.yaml'
+              - '**/*.ts'
+              - '**/*.html'
+              - '**/*.scss'
+
+  code:
+    name: Code (lint, typecheck, test, build)
+    needs: changes
+    if: ${{ needs.changes.outputs.code == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.0
@@ -21,14 +81,11 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v7.0.0
         with:
-          node-version: 24
+          node-version-file: package.json
           cache: npm
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Format
-        run: npm run format:check
 
       - name: Lint
         run: npm run lint
@@ -36,60 +93,21 @@ jobs:
       - name: Lint SCSS
         run: npm run lint:scss
 
-  typecheck:
-    name: Typecheck
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      contents: read
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v7.0.0
-        with:
-          persist-credentials: false
-
-      - name: Install Node.js
-        uses: actions/setup-node@v7.0.0
-        with:
-          node-version: 24
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
       - name: Typecheck
         run: npm run typecheck
 
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      contents: read
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v7.0.0
-        with:
-          persist-credentials: false
-
-      - name: Install Node.js
-        uses: actions/setup-node@v7.0.0
-        with:
-          node-version: 24
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Test
+        run: npm test
 
       - name: Build
         run: npm run build
 
   audit:
-    name: Audit
+    name: Audit dependencies
+    needs: changes
+    if: ${{ needs.changes.outputs.deps == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    permissions:
-      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.0
@@ -99,7 +117,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v7.0.0
         with:
-          node-version: 24
+          node-version-file: package.json
           cache: npm
 
       - name: Install dependencies
@@ -108,30 +126,69 @@ jobs:
       - name: Audit
         run: npm audit
 
-  shfmt:
-    name: shfmt
+  format:
+    name: Formatting (Prettier)
+    needs: changes
+    if: ${{ needs.changes.outputs.format == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    permissions:
-      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.0
         with:
           persist-credentials: false
 
-      - name: Set up shfmt
-        uses: mfinelli/setup-shfmt@v4.0.1
+      - name: Format check
+        run: npx --yes prettier@3.9.6 --check .
+
+  shell:
+    name: Shell (shfmt + shellcheck)
+    needs: changes
+    if: ${{ needs.changes.outputs.shell == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: Install shfmt and shellcheck
+        uses: taiki-e/install-action@v2.84.0
+        with:
+          tool: shfmt,shellcheck
 
       - name: Format check shell scripts
         run: shfmt --diff scripts/
 
-  markdownlint:
-    name: markdownlint
+      - name: Lint shell scripts
+        run: shellcheck scripts/*.sh
+
+  actionlint:
+    name: Lint workflows (actionlint)
+    needs: changes
+    if: ${{ needs.changes.outputs.workflows == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    permissions:
-      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: Lint workflows
+        uses: raven-actions/actionlint@v2.2.0
+        with:
+          # renovate: datasource=github-releases depName=rhysd/actionlint
+          version: 1.7.12
+          shellcheck: true
+
+  markdownlint:
+    name: Markdown lint
+    needs: changes
+    if: ${{ needs.changes.outputs.markdown == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.0

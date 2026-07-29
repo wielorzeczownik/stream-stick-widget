@@ -15,7 +15,7 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=24"
+    "node": "24.x"
   },
   "scripts": {
     "dev": "vite --mode development",
@@ -25,10 +25,10 @@
     "test:watch": "vitest",
     "lint": "eslint widget/src/scripts widget/src/index.html tests",
     "lint:scss": "stylelint \"widget/src/styles/**/*.scss\"",
-    "format": "prettier --write widget/src/scripts widget/src/index.html tests",
-    "format:check": "prettier --check widget/src/scripts widget/src/index.html tests",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit",
-    "fix": "eslint --fix widget/src/scripts widget/src/index.html tests && stylelint --fix \"widget/src/styles/**/*.scss\" && prettier --write widget/src/scripts widget/src/index.html tests"
+    "fix": "eslint --fix widget/src/scripts widget/src/index.html tests && stylelint --fix \"widget/src/styles/**/*.scss\" && prettier --write ."
   },
   "devDependencies": {
     "@html-eslint/eslint-plugin": "0.64.0",
