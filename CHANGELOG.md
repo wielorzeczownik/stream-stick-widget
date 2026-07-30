@@ -5,6 +5,39 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.12](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.11...v0.2.12) - 2026-07-30
+
+### Documentation
+
+- List every check CI runs and the test layout ([9acec9d](https://github.com/wielorzeczownik/stream-stick-widget/commit/9acec9d4beb2c70b00a230a52e70e1b29d9c656f))
+- Document every widget field and fill in package manifest metadata ([6980630](https://github.com/wielorzeczownik/stream-stick-widget/commit/6980630c186436f89586b0e19be5bf23fc69c22a))
+
+### Testing
+
+- Add vitest suite for fields, easings and pull command ([3afb61f](https://github.com/wielorzeczownik/stream-stick-widget/commit/3afb61fb3eae363925db9741fa05ab2ac044823d))
+
+### Build System
+
+- Update dependency @types/node to v26.1.2 ([fe9c02b](https://github.com/wielorzeczownik/stream-stick-widget/commit/fe9c02b320c291fe588dca4900de340f55be2324))
+- Resolve audit advisories ([3a6eae2](https://github.com/wielorzeczownik/stream-stick-widget/commit/3a6eae2567da518959482b902b02fe00ec2e7833))
+- Update dependency sass to v1.102.0 ([89cf874](https://github.com/wielorzeczownik/stream-stick-widget/commit/89cf8745e5db35fcbdaf1f9052d0129f66858c27))
+- Update dependency eslint to v10.8.0 ([224b00e](https://github.com/wielorzeczownik/stream-stick-widget/commit/224b00eeae7544b6ebd7ab6ccd9d2b80e6f484bf))
+- Update dependency sass to v1.101.3 (#91) ([be37732](https://github.com/wielorzeczownik/stream-stick-widget/commit/be3773256b52059c94fbc538c314ebdd39093d9e))
+- Update dependency prettier to v3.9.6 (#90) ([3cc8277](https://github.com/wielorzeczownik/stream-stick-widget/commit/3cc82777f4d913d52d4d48433f0699908143c2ad))
+- Update dependency typescript-eslint to v8.65.0 ([4c9e48b](https://github.com/wielorzeczownik/stream-stick-widget/commit/4c9e48b58fa74d96b58da2ebd5cf1f5c50649b0d))
+- Update dependency stylelint to v17.14.1 (#88) ([dc934e2](https://github.com/wielorzeczownik/stream-stick-widget/commit/dc934e262dfb8fa19dea7aad4f1200fc6bd076d5))
+- Resolve audit advisories ([b9d5e62](https://github.com/wielorzeczownik/stream-stick-widget/commit/b9d5e6269760695dd09929b02fb5a4ab4e0a3a9c))
+
+### CI/CD
+
+- Update taiki-e/install-action action to v2.85.0 ([aa70641](https://github.com/wielorzeczownik/stream-stick-widget/commit/aa70641c496fc5c9576f70a13b729f985dbb4da2))
+- Derive the version bump from cliff.toml ([4f00541](https://github.com/wielorzeczownik/stream-stick-widget/commit/4f0054180dbe70fdab2ed5e1f20e1c788d4b965c))
+- Fall back to a placeholder when a release has no user-facing commits ([96589a7](https://github.com/wielorzeczownik/stream-stick-widget/commit/96589a7877e4da24865df6d753cd507411592481))
+- Update github actions ([be50ddc](https://github.com/wielorzeczownik/stream-stick-widget/commit/be50ddc83c56bf8a7c4a83bc37afbfbba17eff95))
+- Pin actions to commit SHAs and runner images to explicit labels ([0413382](https://github.com/wielorzeczownik/stream-stick-widget/commit/041338275868d5ee33cc82ca336f651d75cd4394))
+- Stop cancelling in-flight releases and report audits instead of blocking ([c70ad1a](https://github.com/wielorzeczownik/stream-stick-widget/commit/c70ad1af4f51c22f2ee6f944e29dfac65875b286))
+- Gate jobs on path filters and merge redundant install steps ([35a7060](https://github.com/wielorzeczownik/stream-stick-widget/commit/35a7060606849888f971dd4758e673171c94504c))
+
 ## [0.2.11](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.10...v0.2.11) - 2026-07-21
 
 ### Bug Fixes
