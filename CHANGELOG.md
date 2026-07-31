@@ -5,6 +5,20 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.13](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.12...v0.2.13) - 2026-07-31
+
+### Build System
+
+- Resolve audit advisories ([f809ac9](https://github.com/wielorzeczownik/stream-stick-widget/commit/f809ac9d395035bbfb8992041e966d0de84c3e7d))
+
+### CI/CD
+
+- Sign bot commits via GitHub API (qoomon create-commit/create-tag) ([99accdf](https://github.com/wielorzeczownik/stream-stick-widget/commit/99accdfc875b891877a317110c74ada2e412307e))
+
+### Dependencies
+
+- Update dependency motion to v12.43.0 (#102) ([a741354](https://github.com/wielorzeczownik/stream-stick-widget/commit/a741354edd44b7f77f3efb6c9e39b7fa2aa81ff9))
+
 ## [0.2.12](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.11...v0.2.12) - 2026-07-30
 
 ### Documentation
