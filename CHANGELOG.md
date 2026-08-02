@@ -5,6 +5,17 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.14](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.13...v0.2.14) - 2026-08-02
+
+### Build System
+
+- Update dependency vite to v8.2.0 (#105) ([75d88c1](https://github.com/wielorzeczownik/stream-stick-widget/commit/75d88c13493e5ebe9625a0e8c3ed4988fd7eca17))
+
+### CI/CD
+
+- Update taiki-e/install-action action to v2.85.2 (#104) ([f8cb396](https://github.com/wielorzeczownik/stream-stick-widget/commit/f8cb3968c0e10dc0d1415cd763edc892829910c2))
+- Update taiki-e/install-action action to v2.85.1 (#103) ([d750ff2](https://github.com/wielorzeczownik/stream-stick-widget/commit/d750ff2cc7f778bdf5f8f4095536b815c0e4c1d5))
+
 ## [0.2.13](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.12...v0.2.13) - 2026-07-31
 
 ### Build System
