@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.15](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.14...v0.2.15) - 2026-08-04
+
+### Dependencies
+
+- Update dependency @types/three to v0.185.3 (#106) ([5ee1967](https://github.com/wielorzeczownik/stream-stick-widget/commit/5ee196799af873e4f8539cdaf112a095a2a71422))
+
 ## [0.2.14](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.13...v0.2.14) - 2026-08-02
 
 ### Build System
