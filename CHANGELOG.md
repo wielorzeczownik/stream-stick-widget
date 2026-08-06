@@ -5,6 +5,40 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.16](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.15...v0.2.16) - 2026-08-06
+
+### Bug Fixes
+
+- Link bot authors and pull requests in the release notes ([6d3dd06](https://github.com/wielorzeczownik/stream-stick-widget/commit/6d3dd06d10a069d7ad7b7272640798fc2269e48c))
+
+### Refactoring
+
+- Collapse the two assign steps into one ([8b8b63e](https://github.com/wielorzeczownik/stream-stick-widget/commit/8b8b63e90560ad94d8e26f4edb048b51018729e8))
+
+### Documentation
+
+- Drop the redundant comment above commit_preprocessors ([f4bb706](https://github.com/wielorzeczownik/stream-stick-widget/commit/f4bb70622328b3f6a27694c70901aa2eea1ef180))
+
+### Styling
+
+- Drop the no-op whitespace trim inside the profile url ([bd01e2a](https://github.com/wielorzeczownik/stream-stick-widget/commit/bd01e2ae6af83d02086ee9195ed27f4860f7e61d))
+
+### Build System
+
+- Update dependency eslint-plugin-unicorn to v73 (#112) ([98100d1](https://github.com/wielorzeczownik/stream-stick-widget/commit/98100d1fdbe798202a9bc7d76bdb3de1a0a0900e))
+- Update dependency typescript-eslint to v8.66.0 (#111) ([0863e7b](https://github.com/wielorzeczownik/stream-stick-widget/commit/0863e7bea183101f2cfd5e1ec24b712a329b9374))
+- Resolve audit advisories ([dca9e8b](https://github.com/wielorzeczownik/stream-stick-widget/commit/dca9e8b73f7c4016574f5dbeacb780363e02f009))
+
+### CI/CD
+
+- Update taiki-e/install-action action to v2.85.4 (#110) ([f770784](https://github.com/wielorzeczownik/stream-stick-widget/commit/f77078431e18319a090b6fd263ffa75f7fde4249))
+- Publish through a deployment environment ([7a8880d](https://github.com/wielorzeczownik/stream-stick-widget/commit/7a8880d5cb077271db4f27edae7500c0af9600ea))
+- Update taiki-e/install-action action to v2.85.3 (#107) ([b67f7dc](https://github.com/wielorzeczownik/stream-stick-widget/commit/b67f7dc81612be44430201eb64f16bf9c4bdc698))
+
+### Other
+
+- Ci/labels and automation (#108) ([d5a0c17](https://github.com/wielorzeczownik/stream-stick-widget/commit/d5a0c171b58f2dc45876dfa0c1b8f9a0ddd886fb))
+
 ## [0.2.15](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.14...v0.2.15) - 2026-08-04
 
 ### Dependencies
