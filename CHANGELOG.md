@@ -5,6 +5,16 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.17](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.16...v0.2.17) - 2026-08-06
+
+### Bug Fixes
+
+- Restore plain @mentions for human authors so avatars render ([f2564c9](https://github.com/wielorzeczownik/stream-stick-widget/commit/f2564c95af0b56827a5aab65d354edf98c3e7577))
+
+### Dependencies
+
+- Update dependency @types/three to v0.185.4 (#109) ([5a11257](https://github.com/wielorzeczownik/stream-stick-widget/commit/5a11257dd65055038f0a10181962b9469314df77))
+
 ## [0.2.16](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.15...v0.2.16) - 2026-08-06
 
 ### Bug Fixes
