@@ -5,6 +5,37 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.21](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.20...v0.2.21) - 2026-09-05
+
+### Bug Fixes
+
+- Resolve audit advisories ([22f1a38](https://github.com/wielorzeczownik/stream-stick-widget/commit/22f1a389ead52a2553c6ae80f6f360cee23b76f9))
+
+### Build System
+
+- Update dependency @types/node to v26.4.1 (#149) ([48469bc](https://github.com/wielorzeczownik/stream-stick-widget/commit/48469bc143ad77e4bad8df4cf16340f000337dcf))
+- Update dependency typescript-eslint to v8.69.0 (#147) ([d23d625](https://github.com/wielorzeczownik/stream-stick-widget/commit/d23d625071664614cb2763cbbc0b5cc0d1b463b8))
+- Resolve audit advisories ([0bb5e44](https://github.com/wielorzeczownik/stream-stick-widget/commit/0bb5e4426c08e13ca8fe87e447490167ded6f8b3))
+- Update dependency eslint-plugin-unicorn to v74 (#145) ([81dfae4](https://github.com/wielorzeczownik/stream-stick-widget/commit/81dfae42d3d1f8010a6e29b22c630836a0a96302))
+- Update dependency @types/node to v26.4.0 (#143) ([261a86f](https://github.com/wielorzeczownik/stream-stick-widget/commit/261a86f5f80db230fccbd54f0907e08ca5b09888))
+- Update dependency eslint to v10.9.1 (#139) ([969c669](https://github.com/wielorzeczownik/stream-stick-widget/commit/969c669b4d486703ddf4db420234fd0b7ef27e74))
+- Update dependency typescript-eslint to v8.68.0 (#142) ([c6f6c19](https://github.com/wielorzeczownik/stream-stick-widget/commit/c6f6c19a3088518eef3d9ff535571b6a3ac4d587))
+- Update dependency @types/node to v26.3.0 (#141) ([36dfda6](https://github.com/wielorzeczownik/stream-stick-widget/commit/36dfda65cf5c0b7c7d5b8dc81b9cac0e72fd66a8))
+- Update dependency sass to v1.103.1 (#137) ([b02cbf7](https://github.com/wielorzeczownik/stream-stick-widget/commit/b02cbf76d2eb5cd9c176fb5e799fc7e46a48ff79))
+
+### CI/CD
+
+- Update taiki-e/install-action action to v2.87.1 (#150) ([e7ab73c](https://github.com/wielorzeczownik/stream-stick-widget/commit/e7ab73c0001533dce564445b2106682b7684d308))
+- Update taiki-e/install-action action to v2.87.0 (#148) ([833796c](https://github.com/wielorzeczownik/stream-stick-widget/commit/833796c9c03f2b9bf65dd94d6354f7e3f1392528))
+- Update taiki-e/install-action action to v2.86.8 (#146) ([9a274fd](https://github.com/wielorzeczownik/stream-stick-widget/commit/9a274fd26792e1a6b8d407938dc8343f236aa597))
+- Update taiki-e/install-action action to v2.86.7 (#144) ([654e942](https://github.com/wielorzeczownik/stream-stick-widget/commit/654e942af83b5700b6324c9b52b0ba14f0d7c473))
+- Update taiki-e/install-action action to v2.86.4 (#140) ([5b12c76](https://github.com/wielorzeczownik/stream-stick-widget/commit/5b12c7640409b12083cc9455f26c044d3db2534a))
+- Update taiki-e/install-action action to v2.86.3 (#138) ([e1b5e70](https://github.com/wielorzeczownik/stream-stick-widget/commit/e1b5e70ed201b1c65fe7314bf5e24be773e99348))
+
+### Dependencies
+
+- Update dependency motion to v13.2.0 (#151) ([d98fca7](https://github.com/wielorzeczownik/stream-stick-widget/commit/d98fca7a6c908839972dcad3fc1fc031cd3ef687))
+
 ## [0.2.20](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.19...v0.2.20) - 2026-08-23
 
 ### Build System
