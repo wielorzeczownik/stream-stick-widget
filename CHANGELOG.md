@@ -5,6 +5,29 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.22](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.21...v0.2.22) - 2026-09-12
+
+### Build System
+
+- Update dependency typescript-eslint to v8.70.0 (#160) ([acdd95f](https://github.com/wielorzeczownik/stream-stick-widget/commit/acdd95fc974bb434f584f0299227fea3072e5af1))
+- Update dependency @types/node to v26.5.0 (#159) ([d9bcb76](https://github.com/wielorzeczownik/stream-stick-widget/commit/d9bcb769be70b42df82f68734fa2817696853595))
+- Resolve audit advisories ([528c19f](https://github.com/wielorzeczownik/stream-stick-widget/commit/528c19fd427357de0421d9b8cbe5b13174899483))
+- Update dependency stylelint to v17.15.0 (#157) ([344e984](https://github.com/wielorzeczownik/stream-stick-widget/commit/344e984aff017721789386377a150a20a9bde5ec))
+- Update dependency vitest to v5 (#153) ([ccf4c49](https://github.com/wielorzeczownik/stream-stick-widget/commit/ccf4c49873623ed6592b65ac268f6ca7ccda0b26))
+- Update dependency eslint to v10.10.0 (#156) ([9fa9bf0](https://github.com/wielorzeczownik/stream-stick-widget/commit/9fa9bf0a4aba9b23f57f8e8f6b224314452d0174))
+- Update dependency sass to v1.104.0 (#155) ([ad2d4e0](https://github.com/wielorzeczownik/stream-stick-widget/commit/ad2d4e02e7e1416d2e4d2475ff83711332f92cdc))
+
+### CI/CD
+
+- Update taiki-e/install-action action to v2.87.5 (#161) ([0f944b6](https://github.com/wielorzeczownik/stream-stick-widget/commit/0f944b6b342397a96883a921f523ae9ef7377448))
+- Update github actions (#158) ([2ba71a7](https://github.com/wielorzeczownik/stream-stick-widget/commit/2ba71a72757faa7b798281ff882f012cd0a23a24))
+- Update taiki-e/install-action action to v2.87.2 (#154) ([fe78ff0](https://github.com/wielorzeczownik/stream-stick-widget/commit/fe78ff07905593f8f2ac8395bc51044ed7ded064))
+- Update softprops/action-gh-release action to v3.0.3 (#152) ([b7c4a55](https://github.com/wielorzeczownik/stream-stick-widget/commit/b7c4a55f38bc652aef2f8fdbecd3a3adba5724b9))
+
+### Dependencies
+
+- Update dependency three to v0.186.0 (#162) ([770317a](https://github.com/wielorzeczownik/stream-stick-widget/commit/770317a420db08085d5e79e6f5e546eb59387b56))
+
 ## [0.2.21](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.20...v0.2.21) - 2026-09-05
 
 ### Bug Fixes
@@ -423,6 +446,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.3](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.1.2...v0.1.3) - 2026-05-02
 
+### Styling
+
+- Improve formatting ([357c7f6](https://github.com/wielorzeczownik/stream-stick-widget/commit/357c7f68f73c12efaaec0a8effe3abf676f492a3))
+
 ### Build System
 
 - Update dependency eslint to v10.3.0 (#6) ([e698a0c](https://github.com/wielorzeczownik/stream-stick-widget/commit/e698a0cfdafd9fef4df0bb015af5203582d67c79))
@@ -441,10 +468,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Bug Fixes
 
 - Lint error ([be2d12e](https://github.com/wielorzeczownik/stream-stick-widget/commit/be2d12e944c8940f8bf7e55f3e6d30d2202e8b3a))
-
-### Styling
-
-- Improve formatting ([357c7f6](https://github.com/wielorzeczownik/stream-stick-widget/commit/357c7f68f73c12efaaec0a8effe3abf676f492a3))
 
 ## [0.1.1](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.1.0...v0.1.1) - 2026-04-20
 
