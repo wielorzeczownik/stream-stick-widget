@@ -5,6 +5,22 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.23](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.22...v0.2.23) - 2026-09-14
+
+### Build System
+
+- Update dependency vite to v8.3.0 (#165) ([e1cdffc](https://github.com/wielorzeczownik/stream-stick-widget/commit/e1cdffcb07e2dd04d31dc2b9562d4eb578a2c336))
+- Update dependency @types/node to v26.5.1 (#164) ([f64b96a](https://github.com/wielorzeczownik/stream-stick-widget/commit/f64b96a643ad2ffc81a3286fc73641ad64ae9ffc))
+
+### CI/CD
+
+- Update taiki-e/install-action action to v2.87.7 (#166) ([5e52662](https://github.com/wielorzeczownik/stream-stick-widget/commit/5e52662ad9496396426f526375ce20e6fb0028e3))
+- Update taiki-e/install-action action to v2.87.6 (#163) ([4a0e73b](https://github.com/wielorzeczownik/stream-stick-widget/commit/4a0e73bf91ad0e404e3cda07e28b82dcbe304651))
+
+### Dependencies
+
+- Update dependency @types/three to v0.186.0 (#167) ([80f836d](https://github.com/wielorzeczownik/stream-stick-widget/commit/80f836d0a2d8b53f5b004b552f568e8b5ff2bbdd))
+
 ## [0.2.22](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.21...v0.2.22) - 2026-09-12
 
 ### Build System
