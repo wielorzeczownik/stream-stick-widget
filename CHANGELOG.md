@@ -5,6 +5,23 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.24](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.23...v0.2.24) - 2026-09-18
+
+### Build System
+
+- Update html-eslint monorepo to v0.66.0 (#171) ([ca4de52](https://github.com/wielorzeczownik/stream-stick-widget/commit/ca4de520a475f11889dd079b07c6ccb3ff656983))
+- Update dependency sass to v1.104.1 (#169) ([f7d3206](https://github.com/wielorzeczownik/stream-stick-widget/commit/f7d3206ec687d31a60c87622f7fbd6ac09e610aa))
+
+### CI/CD
+
+- Update taiki-e/install-action action to v2.87.10 (#172) ([5e31d40](https://github.com/wielorzeczownik/stream-stick-widget/commit/5e31d40fbcada945013703fccb6c3cb35e00379f))
+- Update taiki-e/install-action action to v2.87.9 (#170) ([6c68c65](https://github.com/wielorzeczownik/stream-stick-widget/commit/6c68c65c259c9e6f0e01906872e4aabc7fe53340))
+- Update taiki-e/install-action action to v2.87.8 (#168) ([47a779a](https://github.com/wielorzeczownik/stream-stick-widget/commit/47a779a6bee4a544866b2a21b5cdf3f81f7d5dff))
+
+### Dependencies
+
+- Update dependency motion to v13.3.0 (#173) ([bb57eaa](https://github.com/wielorzeczownik/stream-stick-widget/commit/bb57eaa87203f5d50383d189dcd921b6af55b1bf))
+
 ## [0.2.23](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.22...v0.2.23) - 2026-09-14
 
 ### Build System
