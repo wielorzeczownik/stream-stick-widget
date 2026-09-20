@@ -5,6 +5,20 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.25](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.24...v0.2.25) - 2026-09-20
+
+### Build System
+
+- Update html-eslint monorepo to v0.66.1 (#180) ([7ffa79a](https://github.com/wielorzeczownik/stream-stick-widget/commit/7ffa79a06181a27da0f288013d67852556171ff0))
+- Update dependency prettier to v3.9.7 (#178) ([76e3b46](https://github.com/wielorzeczownik/stream-stick-widget/commit/76e3b46d268fa005d2e71d49d82de43d330f5131))
+- Update dependency @types/node to v26.6.1 (#177) ([ec4b987](https://github.com/wielorzeczownik/stream-stick-widget/commit/ec4b987094d8de51214dad71f834dad275a9f26a))
+- Update dependency vitest to v5.0.1 (#175) ([853c35e](https://github.com/wielorzeczownik/stream-stick-widget/commit/853c35e73e7e46030fbcdcd91473d2467ff35058))
+- Update dependency eslint-plugin-sonarjs to v4.2.1 (#174) ([c2b2823](https://github.com/wielorzeczownik/stream-stick-widget/commit/c2b28239670cc545a8d874f28a844ed3934d54d3))
+
+### Dependencies
+
+- Update dependency motion to v13.4.0 (#181) ([90704eb](https://github.com/wielorzeczownik/stream-stick-widget/commit/90704eb3c14bc0e1ecf36f77a6adef238bae9406))
+
 ## [0.2.24](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.23...v0.2.24) - 2026-09-18
 
 ### Build System
