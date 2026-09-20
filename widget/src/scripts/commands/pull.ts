@@ -23,8 +23,11 @@ export function initPull(config: Config): void {
     if (twitchEvent.listener !== 'event') return;
 
     const inner = twitchEvent.event;
-    if (inner.type !== 'channelPointsRedemption') return;
-    if (inner.data.redemption !== config.rewardName) return;
+    if (
+      inner.type !== 'channelPointsRedemption' ||
+      inner.data.redemption !== config.rewardName
+    )
+      return;
 
     trigger();
   });
