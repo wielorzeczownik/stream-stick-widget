@@ -5,6 +5,26 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.26](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.25...v0.2.26) - 2026-09-25
+
+### Build System
+
+- Update dependency typescript-eslint to v8.70.1 (#187) ([87fd4e7](https://github.com/wielorzeczownik/stream-stick-widget/commit/87fd4e73bcf059b3cfac65f432b1d4bcd5a08812))
+- Update dependency eslint-plugin-unicorn to v76 (#186) ([02ac2a3](https://github.com/wielorzeczownik/stream-stick-widget/commit/02ac2a38f8291f8f75a0694cd77b9172496cfc15))
+- Update dependency @types/node to v26.6.2 (#184) ([a8a8eaf](https://github.com/wielorzeczownik/stream-stick-widget/commit/a8a8eaf57a9b9e52e7caa7aeff262b6652454580))
+- Update dependency eslint to v10.11.0 (#183) ([723946b](https://github.com/wielorzeczownik/stream-stick-widget/commit/723946bab43b38a72594d1eb0b15d247894c57a3))
+- Update dependency prettier to v3.9.8 (#182) ([5102284](https://github.com/wielorzeczownik/stream-stick-widget/commit/51022843f679051f72d6410bb2119553fd991bcc))
+- Update dependency eslint-plugin-unicorn to v75 (#179) ([f2c8860](https://github.com/wielorzeczownik/stream-stick-widget/commit/f2c886099fa294a6a0d993a234d3f58db910b43f))
+
+### CI/CD
+
+- Update taiki-e/install-action action to v2.87.13 (#185) ([047e667](https://github.com/wielorzeczownik/stream-stick-widget/commit/047e667920812ea0b37f8295afe9fa761a2b0b17))
+- Update github actions (#176) ([310336f](https://github.com/wielorzeczownik/stream-stick-widget/commit/310336ffa875c98393dcfc9a89b387c51c19236c))
+
+### Dependencies
+
+- Update dependency motion to v13.4.1 (#189) ([2af86b8](https://github.com/wielorzeczownik/stream-stick-widget/commit/2af86b843c7b8719fa7cb25dd107e4f4f142c87e))
+
 ## [0.2.25](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.24...v0.2.25) - 2026-09-20
 
 ### Build System
