@@ -5,6 +5,22 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.27](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.26...v0.2.27) - 2026-09-26
+
+### Build System
+
+- Update dependency prettier to v3.9.9 (#191) ([aaea0f7](https://github.com/wielorzeczownik/stream-stick-widget/commit/aaea0f7655fe9a56bc0791d3022eb2dde0b62776))
+- Update dependency sass to v1.105.0 (#190) ([e3f6539](https://github.com/wielorzeczownik/stream-stick-widget/commit/e3f6539f2e15e4e54ab813b027417f39f959682d))
+
+### CI/CD
+
+- Update taiki-e/install-action action to v2.87.16 (#192) ([3ffc65e](https://github.com/wielorzeczownik/stream-stick-widget/commit/3ffc65ed87ef1b51f4183693d6c7f2e9c9c12220))
+- Update github actions (#188) ([e4d4804](https://github.com/wielorzeczownik/stream-stick-widget/commit/e4d4804235e6c3c3a32e7edd7333791fe2c32468))
+
+### Dependencies
+
+- Update dependency motion to v13.4.2 (#193) ([2489983](https://github.com/wielorzeczownik/stream-stick-widget/commit/24899835dd9f7434571606e53333a8c6acc4115c))
+
 ## [0.2.26](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.25...v0.2.26) - 2026-09-25
 
 ### Build System
