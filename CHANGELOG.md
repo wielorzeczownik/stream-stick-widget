@@ -5,6 +5,25 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.29](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.28...v0.2.29) - 2026-09-27
+
+### Bug Fixes
+
+- Cap typescript instead of grouping (#201) ([e944300](https://github.com/wielorzeczownik/stream-stick-widget/commit/e9443005670f6d96ed5d901e6c6a93d37c866733))
+
+### Build System
+
+- Update dependency vite to v8.3.1 (#195) ([c4b5ec5](https://github.com/wielorzeczownik/stream-stick-widget/commit/c4b5ec59522adb217470e5ecaebfbd9c39e43a78))
+
+### Dependencies
+
+- Update dependency three to v0.186.1 (#196) ([ea3ee00](https://github.com/wielorzeczownik/stream-stick-widget/commit/ea3ee008b385e23754d40a5ce8054785fdf79f5f))
+
+### Miscellaneous
+
+- Group typescript+typescript-eslint (#199) ([fe3bb6e](https://github.com/wielorzeczownik/stream-stick-widget/commit/fe3bb6ed51b717a5448dd9441ba7f38de5b62a8f))
+- Enable vulnerabilityAlerts (#197) ([0500da6](https://github.com/wielorzeczownik/stream-stick-widget/commit/0500da6ca0ee6d6b3d761dc51e1198e59d79930c))
+
 ## [0.2.28](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.27...v0.2.28) - 2026-09-27
 
 ### Dependencies

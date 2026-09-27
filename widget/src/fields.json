@@ -9,7 +9,7 @@
   },
   "widgetVersion": {
     "type": "hidden",
-    "value": "0.2.28"
+    "value": "0.2.29"
   },
   "btnTestAnimation": {
     "type": "button",
