@@ -5,6 +5,21 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.30](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.29...v0.2.30) - 2026-09-29
+
+### Build System
+
+- Update dependency vitest to v5.0.2 (#203) ([0090d5e](https://github.com/wielorzeczownik/stream-stick-widget/commit/0090d5e904adfe8ca43cedb7c4a675b546803efd))
+- Update dependency @types/node to v26.6.3 (#202) ([bd8d6f5](https://github.com/wielorzeczownik/stream-stick-widget/commit/bd8d6f5ac65b70ca209ddf7fba218380beee20bc))
+
+### CI/CD
+
+- Update taiki-e/install-action action to v2.87.17 (#198) ([9c533c7](https://github.com/wielorzeczownik/stream-stick-widget/commit/9c533c7ccbda84982a6ddfcd2ac1ad1825a26a6a))
+
+### Dependencies
+
+- Update dependency motion to v13.4.4 (#204) ([4c34cb4](https://github.com/wielorzeczownik/stream-stick-widget/commit/4c34cb4fba865da0f836a93856b86c4ae8701f1b))
+
 ## [0.2.29](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.28...v0.2.29) - 2026-09-27
 
 ### Bug Fixes
