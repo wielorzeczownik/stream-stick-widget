@@ -5,6 +5,25 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.31](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.30...v0.2.31) - 2026-10-03
+
+### Build System
+
+- Resolve audit advisories ([c696201](https://github.com/wielorzeczownik/stream-stick-widget/commit/c696201b5115f17afc7094324c58cae5dc7dc2c6))
+- Update dependency sass to v1.105.1 (#210) ([a6a25bf](https://github.com/wielorzeczownik/stream-stick-widget/commit/a6a25bf3e4053fd18666ee8c44926ba01f7aca5f))
+- Update dependency typescript-eslint to v8.71.0 (#208) ([8d438de](https://github.com/wielorzeczownik/stream-stick-widget/commit/8d438deb192c3ece9ce5d324ba1ae6bbd47b6500))
+- Update dependency eslint-plugin-sonarjs to v4.2.2 (#207) ([ee4b839](https://github.com/wielorzeczownik/stream-stick-widget/commit/ee4b839e46b41fec3523840034916b73348ade30))
+- Resolve audit advisories ([6521e27](https://github.com/wielorzeczownik/stream-stick-widget/commit/6521e270fc7f2a91e607ffef7c7b812cd9f18569))
+
+### CI/CD
+
+- Update taiki-e/install-action action to v2.87.20 (#206) ([a9ff7f8](https://github.com/wielorzeczownik/stream-stick-widget/commit/a9ff7f8bb0edc7686378e741e7f79b9736d19c83))
+- Update taiki-e/install-action action to v2.87.18 (#205) ([aa19bc2](https://github.com/wielorzeczownik/stream-stick-widget/commit/aa19bc2d4c523c9c9d05649155d0f4fc4d597f10))
+
+### Dependencies
+
+- Update dependency motion to v13.4.6 (#209) ([a7cc414](https://github.com/wielorzeczownik/stream-stick-widget/commit/a7cc4145e16b1ceccedb7a41b9b7ff4f7f00466b))
+
 ## [0.2.30](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.29...v0.2.30) - 2026-09-29
 
 ### Build System
