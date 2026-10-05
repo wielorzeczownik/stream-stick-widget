@@ -5,6 +5,23 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.32](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.31...v0.2.32) - 2026-10-05
+
+### Build System
+
+- Update dependency @types/node to v26.6.4 (#217) ([6974382](https://github.com/wielorzeczownik/stream-stick-widget/commit/69743828bb413c65633032764f48b177f3474acd))
+- Update dependency stylelint to v17.16.0 (#215) ([cfabf34](https://github.com/wielorzeczownik/stream-stick-widget/commit/cfabf34d8cca04efe86750c257ac3eb737a153ea))
+- Update dependency vite to v8.3.2 (#214) ([1e0820c](https://github.com/wielorzeczownik/stream-stick-widget/commit/1e0820c485227246cbeec39075dcd137494a9706))
+- Update dependency vitest to v5.0.3 (#212) ([14aa1be](https://github.com/wielorzeczownik/stream-stick-widget/commit/14aa1be2f5c466c5799cd60a97fb2b87ef3f166e))
+
+### CI/CD
+
+- Update taiki-e/install-action action to v2.87.21 (#213) ([5bb2b62](https://github.com/wielorzeczownik/stream-stick-widget/commit/5bb2b62eb97f32258cd82fab249518514bb8028f))
+
+### Dependencies
+
+- Update dependency motion to v13.5.0 (#216) ([78e0f85](https://github.com/wielorzeczownik/stream-stick-widget/commit/78e0f85256eee2fbc2b8a2b23a3b120d637bde38))
+
 ## [0.2.31](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.30...v0.2.31) - 2026-10-03
 
 ### Build System
