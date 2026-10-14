@@ -5,6 +5,34 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.34](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.33...v0.2.34) - 2026-10-14
+
+### Build System
+
+- Update dependency eslint-plugin-unicorn to v77 (#222) ([e59f88e](https://github.com/wielorzeczownik/stream-stick-widget/commit/e59f88e274c9748a8e52456fb0dbd3f74add5bf2))
+- Update dependency stylelint-order to v8.1.2 (#232) ([cca6475](https://github.com/wielorzeczownik/stream-stick-widget/commit/cca6475a97a01863a9cd541f02e284d35db5bf1e))
+- Update dependency prettier to v3.9.10 (#231) ([825c18c](https://github.com/wielorzeczownik/stream-stick-widget/commit/825c18c4d05c5cd6d95a67312be848f46dccc120))
+- Update dependency @types/node to v26.6.5 (#229) ([20d521d](https://github.com/wielorzeczownik/stream-stick-widget/commit/20d521dd844f846e92008c1da3241a5100175e84))
+- Update dependency vite to v8.3.4 (#228) ([32ffad6](https://github.com/wielorzeczownik/stream-stick-widget/commit/32ffad6946991056ab5d6e3da08cbda9358d40e6))
+- Update dependency vite to v8.3.3 (#224) ([6f1a15a](https://github.com/wielorzeczownik/stream-stick-widget/commit/6f1a15ab8c47bfc3bfd29f565e6a5273bd13fdab))
+- Update dependency typescript-eslint to v8.71.1 (#223) ([e74c605](https://github.com/wielorzeczownik/stream-stick-widget/commit/e74c60514bb73fa60d9ac70433c2a25e5859bbf5))
+- Resolve audit advisories ([e08ef93](https://github.com/wielorzeczownik/stream-stick-widget/commit/e08ef9323abfa6a039a0fcf697d12cc584976869))
+- Update dependency eslint to v10.12.0 (#220) ([ade1a59](https://github.com/wielorzeczownik/stream-stick-widget/commit/ade1a59a587955ac0b11cae9c03ebd63c170b5f2))
+
+### CI/CD
+
+- Update artifact actions (#234) ([536004e](https://github.com/wielorzeczownik/stream-stick-widget/commit/536004e4ee51294b54e85f6dc17474887e305a20))
+- Update taiki-e/install-action action to v2.87.26 (#233) ([823a089](https://github.com/wielorzeczownik/stream-stick-widget/commit/823a0890c5019aacb7256992a120af5f13eefd1b))
+- Update taiki-e/install-action action to v2.87.25 (#230) ([657b882](https://github.com/wielorzeczownik/stream-stick-widget/commit/657b88269aac0d2eaa169b01674aa3afd03e8089))
+- Update taiki-e/install-action action to v2.87.24 (#227) ([0f782a3](https://github.com/wielorzeczownik/stream-stick-widget/commit/0f782a301dcb294fafe1db43073cb7842e5bb978))
+- Update taiki-e/install-action action to v2.87.23 (#226) ([c313b51](https://github.com/wielorzeczownik/stream-stick-widget/commit/c313b51983647249f7ed93c743928295a05b01d4))
+- Update codelytv/pr-size-labeler action to v1.12.0 (#225) ([952bec2](https://github.com/wielorzeczownik/stream-stick-widget/commit/952bec2b95e0d4a71e48dae971ad0e3964edaab0))
+- Update github actions (#219) ([28deda2](https://github.com/wielorzeczownik/stream-stick-widget/commit/28deda2514536e4c1f23121a91e9d1ce0f255bc9))
+
+### Dependencies
+
+- Update dependency motion to v14 (#221) ([7929b6a](https://github.com/wielorzeczownik/stream-stick-widget/commit/7929b6ac9ced18f2620ef48e132339aae97f111c))
+
 ## [0.2.33](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.32...v0.2.33) - 2026-10-05
 
 ### Dependencies
