@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Stream Stick</title>
-    <link href="./styles/index.scss" rel="stylesheet" />
-    <script type="module" src="./scripts/index.ts"></script>
+    <link href="styles/index.scss" rel="stylesheet" />
+    <script type="module" src="scripts/index.ts"></script>
   </head>
   <body>
     <div id="widget">
@@ -17,35 +17,43 @@
       <canvas id="scene"></canvas>
     </div>
 
-    <div id="dev-panel" class="dev-panel">
-      <div class="dev-panel__header">Dev Panel – Stick out</div>
+    <div id="development-panel" class="development-panel">
+      <div class="development-panel__header">Dev Panel – Stick out</div>
 
-      <div class="dev-panel__section">
-        <div class="dev-panel__section-title">Stick angle (degrees)</div>
-        <input id="dev-angle" type="range" max="180" min="-180" value="-65" />
-        <span id="dev-angle-value">-65°</span>
+      <div class="development-panel__section">
+        <div class="development-panel__section-title">
+          Stick angle (degrees)
+        </div>
+        <input
+          id="development-angle"
+          type="range"
+          max="180"
+          min="-180"
+          value="-65"
+        />
+        <span id="development-angle-value">-65°</span>
       </div>
 
-      <div class="dev-panel__section">
-        <div class="dev-panel__section-title">Skin</div>
-        <select id="dev-skin">
+      <div class="development-panel__section">
+        <div class="development-panel__section-title">Skin</div>
+        <select id="development-skin">
           <option value="wood">Wood</option>
           <option value="minecraft">Minecraft – Stick</option>
           <option value="minecraft_pickaxe">Minecraft – Pickaxe</option>
           <option value="custom">Custom (URL below)</option>
         </select>
         <input
-          id="dev-custom-skin-url"
+          id="development-custom-skin-url"
           type="text"
           placeholder="URL własnej tekstury"
           spellcheck="false"
         />
       </div>
 
-      <div class="dev-panel__section">
-        <div class="dev-panel__section-title">Hold duration (s)</div>
+      <div class="development-panel__section">
+        <div class="development-panel__section-title">Hold duration (s)</div>
         <input
-          id="dev-hold-duration"
+          id="development-hold-duration"
           type="number"
           max="30"
           min="0"
@@ -54,19 +62,19 @@
         />
       </div>
 
-      <div class="dev-panel__section">
-        <div class="dev-panel__section-title">Censorship</div>
-        <select id="dev-censor-style">
+      <div class="development-panel__section">
+        <div class="development-panel__section-title">Censorship</div>
+        <select id="development-censor-style">
           <option value="none">None</option>
           <option value="pixel">Pixelate</option>
         </select>
       </div>
 
-      <div class="dev-panel__section">
-        <div class="dev-panel__section-title">Animation</div>
-        <button id="dev-anim-direct">Direct (UI only)</button>
-        <button id="dev-anim-command">via chat command</button>
-        <button id="dev-anim-points">via Channel Points</button>
+      <div class="development-panel__section">
+        <div class="development-panel__section-title">Animation</div>
+        <button id="development-anim-direct">Direct (UI only)</button>
+        <button id="development-anim-command">via chat command</button>
+        <button id="development-anim-points">via Channel Points</button>
       </div>
     </div>
   </body>

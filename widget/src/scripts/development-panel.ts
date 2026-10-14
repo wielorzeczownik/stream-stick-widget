@@ -1,4 +1,4 @@
-import '@styles/dev-panel.scss';
+import '@styles/development-panel.scss';
 
 import Tixyel from '@tixyel/streamelements';
 
@@ -46,9 +46,9 @@ function emulateChannelPoints(rewardName: string): void {
 
 export function initDevelopmentPanel(config: Config): void {
   const angleInput = document.getElementById(
-    'dev-angle'
+    'development-angle'
   ) as HTMLInputElement | null;
-  const angleValue = document.getElementById('dev-angle-value');
+  const angleValue = document.getElementById('development-angle-value');
   if (angleInput) {
     angleInput.value = String(config.stickAngle);
     if (angleValue) angleValue.textContent = `${config.stickAngle}°`;
@@ -60,11 +60,11 @@ export function initDevelopmentPanel(config: Config): void {
   }
 
   const customSkinInput = document.getElementById(
-    'dev-custom-skin-url'
+    'development-custom-skin-url'
   ) as HTMLInputElement | null;
 
   const skinSelect = document.getElementById(
-    'dev-skin'
+    'development-skin'
   ) as HTMLSelectElement | null;
   if (skinSelect) {
     skinSelect.value = config.stickSkin;
@@ -85,7 +85,7 @@ export function initDevelopmentPanel(config: Config): void {
   }
 
   const holdInput = document.getElementById(
-    'dev-hold-duration'
+    'development-hold-duration'
   ) as HTMLInputElement | null;
   if (holdInput) {
     holdInput.value = String(config.holdDuration);
@@ -95,7 +95,7 @@ export function initDevelopmentPanel(config: Config): void {
   }
 
   const censorSelect = document.getElementById(
-    'dev-censor-style'
+    'development-censor-style'
   ) as HTMLSelectElement | null;
   if (censorSelect) {
     censorSelect.value = config.censorStyle;
@@ -105,14 +105,14 @@ export function initDevelopmentPanel(config: Config): void {
   }
 
   document
-    .querySelector('#dev-anim-direct')
+    .querySelector('#development-anim-direct')
     ?.addEventListener('click', () => trigger());
 
   document
-    .querySelector('#dev-anim-command')
+    .querySelector('#development-anim-command')
     ?.addEventListener('click', () => emulateCommand(config.commandName));
 
   document
-    .querySelector('#dev-anim-points')
+    .querySelector('#development-anim-points')
     ?.addEventListener('click', () => emulateChannelPoints(config.rewardName));
 }

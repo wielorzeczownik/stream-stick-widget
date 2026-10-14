@@ -116,9 +116,9 @@ export class Stick {
       stickLength,
       stickColor,
       config.customSkinUrl,
-      (skinHeight: number, angle?: number) => {
+      (skinHeight: number, angle = 0) => {
         this.contentHeight = skinHeight;
-        this.spriteAngleZ = angle ?? 0;
+        this.spriteAngleZ = angle;
         // stickGroup carries the sprite's baked-in tilt, pivot subtracts it back
         // so the total visual lean always equals baseAngleZ
         this.stickGroup.rotation.z = this.spriteAngleZ;
@@ -253,9 +253,9 @@ export class Stick {
       this.config.stickLength,
       this.config.stickColor,
       this.config.customSkinUrl,
-      (skinHeight: number, angle?: number) => {
+      (skinHeight: number, angle = 0) => {
         this.contentHeight = skinHeight;
-        this.spriteAngleZ = angle ?? 0;
+        this.spriteAngleZ = angle;
         this.stickGroup.rotation.z = this.spriteAngleZ;
         this.pivot.rotation.z = this.baseAngleZ - this.spriteAngleZ;
         this.doRender();
