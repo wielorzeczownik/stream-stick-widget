@@ -5,6 +5,21 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.35](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.34...v0.2.35) - 2026-10-15
+
+### Build System
+
+- Update dependency @tixyel/cli to v3.7.0 (#237) ([1b84926](https://github.com/wielorzeczownik/stream-stick-widget/commit/1b849265562b81fef6d3b4bb6684d25405323a57))
+- Update dependency vitest to v5.0.4 (#236) ([5bcc9a4](https://github.com/wielorzeczownik/stream-stick-widget/commit/5bcc9a4dafaaec9ecbd6db4c39d0500c905aa837))
+
+### CI/CD
+
+- Update actions/setup-node action to v7.1.0 (#235) ([4ff38e0](https://github.com/wielorzeczownik/stream-stick-widget/commit/4ff38e064c5c7e7d5966cc6d3c8f5725d8b985ca))
+
+### Dependencies
+
+- Update dependency @tixyel/streamelements to v7.15.0 (#238) ([00f39ad](https://github.com/wielorzeczownik/stream-stick-widget/commit/00f39ad8dec04ce28243988a1f032c9674b10a1c))
+
 ## [0.2.34](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.33...v0.2.34) - 2026-10-14
 
 ### Build System
