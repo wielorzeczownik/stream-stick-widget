@@ -5,6 +5,16 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.37](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.36...v0.2.37) - 2026-10-16
+
+### Build System
+
+- Update dependency typescript-eslint to v8.71.2 (#239) ([5720380](https://github.com/wielorzeczownik/stream-stick-widget/commit/57203806725d05b9ca396f1f258152de5c702f16))
+
+### Dependencies
+
+- Update dependency motion to v14.2.0 (#241) ([04db4c5](https://github.com/wielorzeczownik/stream-stick-widget/commit/04db4c523bf586dc4ac4126e417dcc9fa35f8512))
+
 ## [0.2.36](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.35...v0.2.36) - 2026-10-16
 
 ### Bug Fixes
