@@ -14,6 +14,8 @@ import { buildSkin, disposeSkinObjects } from '@/skins';
 import { randomSoundUrl } from '@/sounds';
 import type { CensorStyle, Config, Skin } from '@/types';
 
+const logger = new Tixyel.modules.useLogger();
+
 type QueueItem = Record<string, never>;
 
 const PIXEL_BLOCK = 16;
@@ -185,7 +187,7 @@ export class Stick {
     try {
       await audio.play();
     } catch (error: unknown) {
-      Tixyel.logger.warn(`[Kij] Sound failed: ${String(error)}`);
+      logger.warn(`[Kij] Sound failed: ${String(error)}`);
     }
   }
 

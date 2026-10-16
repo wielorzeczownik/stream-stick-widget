@@ -19,7 +19,6 @@ vi.mock('@tixyel/streamelements', () => ({
   default: {
     Client: vi.fn(),
     actions: { Command: MockCommand, Button: MockButton },
-    logger: { success: vi.fn(), debug: vi.fn() },
     SeAPI: Promise.resolve({ sendMessage: vi.fn() }),
   },
   StreamElements: {},
