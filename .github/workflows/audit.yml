@@ -7,7 +7,6 @@ on:
 
 concurrency:
   group: security-audit
-  # Two overlapping runs would both push a fixed package-lock.json and race.
   cancel-in-progress: false
 
 permissions: {}
