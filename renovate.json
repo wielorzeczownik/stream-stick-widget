@@ -23,20 +23,12 @@
   ],
   "packageRules": [
     {
-      "matchDepTypes": ["devDependencies"],
-      "semanticCommitType": "build"
-    },
-    {
       "matchPackageNames": ["three", "@types/three"],
       "groupName": "three"
     },
     {
       "matchPackageNames": ["@tixyel/streamelements"],
       "groupName": "streamelements"
-    },
-    {
-      "matchPackageNames": ["typescript"],
-      "allowedVersions": "<6.1.0"
     }
   ]
 }
