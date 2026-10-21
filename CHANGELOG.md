@@ -5,6 +5,42 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.38](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.37...v0.2.38) - 2026-10-21
+
+### Bug Fixes
+
+- Match breaking changes by field so they get their own section ([a924812](https://github.com/wielorzeczownik/stream-stick-widget/commit/a9248121df19e5750798c3cbaa6f7937ffade6fe))
+- Group fix(deps) updates under dependencies ([f813a06](https://github.com/wielorzeczownik/stream-stick-widget/commit/f813a0622f8110c09bc3717dbb9a798a844d36f5))
+
+### Documentation
+
+- Explain how to verify attestations in release notes ([2179e72](https://github.com/wielorzeczownik/stream-stick-widget/commit/2179e72d2165bb40ecf33bc9bbde4c403ab6d7aa))
+- Use shared pull request template from .github ([0899ef2](https://github.com/wielorzeczownik/stream-stick-widget/commit/0899ef29658d5a91a4429e6e373c42f3309481a0))
+- Use shared code of conduct from .github ([cfd61ed](https://github.com/wielorzeczownik/stream-stick-widget/commit/cfd61edf20d9c614206a8188a71125cefbf815a0))
+
+### Build System
+
+- Migrate fileMatch to managerFilePatterns ([878d6ee](https://github.com/wielorzeczownik/stream-stick-widget/commit/878d6ee8be75954606c4eb43c2873195d7d35fb5))
+- Drop rules covered by shared preset ([b55d05b](https://github.com/wielorzeczownik/stream-stick-widget/commit/b55d05b2727b0f0e062352d1bafbccde22d2686c))
+- Extend shared preset from .github ([5e36922](https://github.com/wielorzeczownik/stream-stick-widget/commit/5e3692290974af7508fb99a52bb254ea629d320e))
+- Open one pull request per dependency (#248) ([093802a](https://github.com/wielorzeczownik/stream-stick-widget/commit/093802a179db5a720718ca2c65d8a2a74b8f8d11))
+- Update all non-major (#246) ([2df6680](https://github.com/wielorzeczownik/stream-stick-widget/commit/2df668062c1c86b8a41173f4f9c33c8359988b10))
+- Update dependency eslint-plugin-unicorn to v78 (#240) ([1169161](https://github.com/wielorzeczownik/stream-stick-widget/commit/11691618b30ada869484a390c99f3817942e6d0f))
+
+### CI/CD
+
+- Attach an spdx sbom to releases ([b656da4](https://github.com/wielorzeczownik/stream-stick-widget/commit/b656da4ce3f356838a75222f167b80bd3933e030))
+- Move pinned tool versions to workflow env ([4b6c334](https://github.com/wielorzeczownik/stream-stick-widget/commit/4b6c33474aa62b92c21720833dd430bb0fa73c23))
+- Hand dependency fixes to renovate (#245) ([04c12dc](https://github.com/wielorzeczownik/stream-stick-widget/commit/04c12dc49a2083fa33f622dee3c4ae3295e8b546))
+- Skip npm ci in prepare and unify job names (#244) ([b1a70b1](https://github.com/wielorzeczownik/stream-stick-widget/commit/b1a70b19e693d6f9d89d95cb5b4c04aa7e97e6e9))
+- Adopt repo standard for validate, labels and audit reports ([4d24f1e](https://github.com/wielorzeczownik/stream-stick-widget/commit/4d24f1ea8ffa4c04b081bfa7ef76aca41f6c79b3))
+- Batch updates weekly and skip bot PRs in label/assign ([f40969b](https://github.com/wielorzeczownik/stream-stick-widget/commit/f40969b9d7b549dc6b14fd4718a8d01438da8f33))
+- Update taiki-e/install-action action to v2.87.27 (#242) ([ab18777](https://github.com/wielorzeczownik/stream-stick-widget/commit/ab18777780227fb7bd209e5fe7f926cac5ae294b))
+
+### Dependencies
+
+- Lock file maintenance (#247) ([33fd745](https://github.com/wielorzeczownik/stream-stick-widget/commit/33fd7454fba41e9772ff6f500eb6c8b5ccf2c29c))
+
 ## [0.2.37](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.36...v0.2.37) - 2026-10-16
 
 ### Build System
@@ -254,10 +290,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.2.21](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.20...v0.2.21) - 2026-09-05
 
-### Bug Fixes
-
-- Resolve audit advisories ([22f1a38](https://github.com/wielorzeczownik/stream-stick-widget/commit/22f1a389ead52a2553c6ae80f6f360cee23b76f9))
-
 ### Build System
 
 - Update dependency @types/node to v26.4.1 (#149) ([48469bc](https://github.com/wielorzeczownik/stream-stick-widget/commit/48469bc143ad77e4bad8df4cf16340f000337dcf))
@@ -282,6 +314,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Dependencies
 
 - Update dependency motion to v13.2.0 (#151) ([d98fca7](https://github.com/wielorzeczownik/stream-stick-widget/commit/d98fca7a6c908839972dcad3fc1fc031cd3ef687))
+- Resolve audit advisories ([22f1a38](https://github.com/wielorzeczownik/stream-stick-widget/commit/22f1a389ead52a2553c6ae80f6f360cee23b76f9))
 
 ## [0.2.20](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.19...v0.2.20) - 2026-08-23
 
