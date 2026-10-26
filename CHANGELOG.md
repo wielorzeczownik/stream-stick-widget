@@ -5,6 +5,21 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.39](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.38...v0.2.39) - 2026-10-26
+
+### Bug Fixes
+
+- Draft releases before uploading assets (#251) ([f5713e6](https://github.com/wielorzeczownik/stream-stick-widget/commit/f5713e6f5fedeb879e00a3a41c598e8062129c7d))
+
+### CI/CD
+
+- Cut release candidates on push and stable releases weekly (#250) ([df545bf](https://github.com/wielorzeczownik/stream-stick-widget/commit/df545bf95016f3eba644374d5b3e6e665cfafa91))
+
+### Dependencies
+
+- Update dependency vite to v8.3.5 (#253) ([c9fe8cb](https://github.com/wielorzeczownik/stream-stick-widget/commit/c9fe8cb3c4f582a3d11e675b90b032ca31f4135e))
+- Update dependency stylelint-config-recess-order to v7.8.2 (#252) ([2301b2e](https://github.com/wielorzeczownik/stream-stick-widget/commit/2301b2ea083ab546d0ad12952365be9683ac2ca5))
+
 ## [0.2.38](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.37...v0.2.38) - 2026-10-21
 
 ### Bug Fixes
