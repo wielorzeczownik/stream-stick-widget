@@ -24,9 +24,8 @@ vi.mock('@tixyel/streamelements', () => ({
   StreamElements: {},
 }));
 
-type EventHandler = (provider: string, event: unknown) => void;
-
 function setup(config = makeConfig()) {
+  type EventHandler = (provider: string, event: unknown) => void;
   initPull(config);
   const handler = mockClientOn.mock.calls.find(
     ([name]) => name === 'event'
