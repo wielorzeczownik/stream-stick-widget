@@ -5,6 +5,30 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.40](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.39...v0.2.40) - 2026-11-02
+
+### CI/CD
+
+- Read export dir version from widget/.tixyel (#270) ([eea526f](https://github.com/wielorzeczownik/stream-stick-widget/commit/eea526fa0a63c836a974aed0bff4e41af9e49111))
+- Update pozil/auto-assign-issue action to v4.1.0 (#266) ([4b29100](https://github.com/wielorzeczownik/stream-stick-widget/commit/4b29100607b85de26a4efe8faed96f22792dd5b6))
+- Update davidanson/markdownlint-cli2-action action to v25 (#269) ([216c68e](https://github.com/wielorzeczownik/stream-stick-widget/commit/216c68e586d2c00f2f5f0b373a3854689dcc7fd7))
+- Update taiki-e/install-action action to v2.87.31 (#264) ([44bcb30](https://github.com/wielorzeczownik/stream-stick-widget/commit/44bcb3072905145264dff6d0bf9b43d5a31cc6c3))
+- Update taiki-e/install-action action to v2.87.29 (#254) ([a6083c4](https://github.com/wielorzeczownik/stream-stick-widget/commit/a6083c49f6ac9fd7cf934b6d925047a8df0150d4))
+
+### Dependencies
+
+- Update dependency motion to v14.8.0 (#267) ([bbed778](https://github.com/wielorzeczownik/stream-stick-widget/commit/bbed77825c11c6fdcf0f47e8ab1a7479a340db37))
+- Lock file maintenance (#262) ([bfa23d7](https://github.com/wielorzeczownik/stream-stick-widget/commit/bfa23d72aef6d5c0b31fbbdf6c9284b47d433837))
+- Update dependency sass to v1.107.0 (#265) ([b4941c2](https://github.com/wielorzeczownik/stream-stick-widget/commit/b4941c2df552933011bc9decda5fa2c7d23d9cb4))
+- Update node.js to v26 (#268) ([f67d00e](https://github.com/wielorzeczownik/stream-stick-widget/commit/f67d00e53677266b57f25959c8feb8ebeb84ecd6))
+- Update dependency typescript-eslint to v8.72.1 (#263) ([9572599](https://github.com/wielorzeczownik/stream-stick-widget/commit/957259962ac4a1c93709508d46d1bbba99e3e2c4))
+- Update dependency eslint-plugin-unicorn to v79 (#260) ([6fa81e0](https://github.com/wielorzeczownik/stream-stick-widget/commit/6fa81e0d2fe785710c3dc12351b8479de9ca3a67))
+- Update dependency motion to v14.6.0 (#259) ([fe04d99](https://github.com/wielorzeczownik/stream-stick-widget/commit/fe04d99b51194a6f795399cb3150cab6d483897b))
+- Update dependency typescript-eslint to v8.72.0 (#258) ([74bb21c](https://github.com/wielorzeczownik/stream-stick-widget/commit/74bb21c08e2fe5b83b6e93991073ef156dea2d43))
+- Update dependency stylelint-config-recess-order to v7.9.0 (#257) ([1b9ee34](https://github.com/wielorzeczownik/stream-stick-widget/commit/1b9ee347eae486ca23968d729e86514deee9ecf0))
+- Update dependency sass to v1.106.1 (#256) ([23cebf0](https://github.com/wielorzeczownik/stream-stick-widget/commit/23cebf016f998e091318d2aeb8604bb1a3c48420))
+- Update dependency eslint to v10.13.0 (#255) ([dfc59ce](https://github.com/wielorzeczownik/stream-stick-widget/commit/dfc59cec4e9d72cf21e2940ce45da4d496b134ce))
+
 ## [0.2.39](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.38...v0.2.39) - 2026-10-26
 
 ### Bug Fixes
