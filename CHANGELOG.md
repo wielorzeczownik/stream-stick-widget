@@ -5,6 +5,26 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.41](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.40...v0.2.41) - 2026-11-16
+
+### CI/CD
+
+- Update taiki-e/install-action action to v2.89.1 (#277) ([bbb71eb](https://github.com/wielorzeczownik/stream-stick-widget/commit/bbb71eb860019808b66cc215552bdf40663f098a))
+- Create lightweight tags ([bbc39b7](https://github.com/wielorzeczownik/stream-stick-widget/commit/bbc39b797d662387be9ef803c16b2e58fbeaf674))
+
+### Dependencies
+
+- Update dependency typescript-eslint to v8.72.2 (#281) ([71cb23a](https://github.com/wielorzeczownik/stream-stick-widget/commit/71cb23a833556a3932c1843d47315d24e5123710))
+- Update dependency sass to v1.108.2 (#280) ([a5455fe](https://github.com/wielorzeczownik/stream-stick-widget/commit/a5455fe1f7c63e3d12ff6d70ca68d7f1a67a9484))
+- Update three to v0.187.0 (#279) ([349c3d7](https://github.com/wielorzeczownik/stream-stick-widget/commit/349c3d7df7127e45a5a9d4198acdddf0ece7690c))
+- Update dependency motion to v14.10.1 (#278) ([057d4ba](https://github.com/wielorzeczownik/stream-stick-widget/commit/057d4bafdd166551f8dd62a59fa51c2aae946a2f))
+- Update dependency vitest to v5.1.0 (#276) ([f4d5a8f](https://github.com/wielorzeczownik/stream-stick-widget/commit/f4d5a8f06b5f886522b00ef3218639db545f3b2e))
+- Update dependency stylelint-config-recess-order to v7.10.0 (#275) ([d5ff00b](https://github.com/wielorzeczownik/stream-stick-widget/commit/d5ff00bb2449b3b127087a25cb027ad5ba9177ae))
+- Update dependency sass to v1.108.1 (#271) ([95fb34f](https://github.com/wielorzeczownik/stream-stick-widget/commit/95fb34f019effd39ac952f9ef664b851534aeed8))
+- Update dependency eslint to v10.14.0 (#274) ([7e751cf](https://github.com/wielorzeczownik/stream-stick-widget/commit/7e751cf516b82fd32fd3b643d53d8bccfa8888f2))
+- Update dependency vite to v8.3.6 (#273) ([daecd3f](https://github.com/wielorzeczownik/stream-stick-widget/commit/daecd3f1aa94c86ec91921442b5860aedb86efd1))
+- Update dependency stylelint-order to v8.1.3 (#272) ([1e71b44](https://github.com/wielorzeczownik/stream-stick-widget/commit/1e71b4490d98be20759635af9c394368a7e3b754))
+
 ## [0.2.40](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.39...v0.2.40) - 2026-11-02
 
 ### CI/CD
