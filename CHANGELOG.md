@@ -5,6 +5,27 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.42](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.41...v0.2.42) - 2026-11-23
+
+### Documentation
+
+- Make contributing, security and issue forms friendlier (#297) ([d30bca9](https://github.com/wielorzeczownik/stream-stick-widget/commit/d30bca98427f84e8ac79762b5f4377d611b93c7f))
+
+### CI/CD
+
+- Update taiki-e/install-action action to v2.90.5 (#291) ([5dc2335](https://github.com/wielorzeczownik/stream-stick-widget/commit/5dc23351d02d8260e97195e81a467a2bc631e638))
+- Update taiki-e/install-action action to v2.90.3 (#286) ([fb40e05](https://github.com/wielorzeczownik/stream-stick-widget/commit/fb40e05dceb976bcf635f7acb5eff9233928c668))
+- Update softprops/action-gh-release action to v3.0.4 (#283) ([22c75fc](https://github.com/wielorzeczownik/stream-stick-widget/commit/22c75fc67148d86d98de0e45fec136715fa2c436))
+
+### Dependencies
+
+- Update dependency vitest to v5.1.1 (#290) ([0b4ee72](https://github.com/wielorzeczownik/stream-stick-widget/commit/0b4ee72afc23ab9c90d714884b5181347b62920a))
+- Update dependency stylelint-config-recess-order to v7.10.1 (#289) ([0f8ac22](https://github.com/wielorzeczownik/stream-stick-widget/commit/0f8ac2295e1225111a186811553b9d8ad6b6eb47))
+- Update dependency motion to v14.14.0 (#287) ([f509152](https://github.com/wielorzeczownik/stream-stick-widget/commit/f5091520d5b7c35c5d2299e8bc1121b680059d69))
+- Update html-eslint monorepo to v0.68.0 (#285) ([509736f](https://github.com/wielorzeczownik/stream-stick-widget/commit/509736f22f595df1f9a336c265a4c68bb55594f4))
+- Update dependency prettier to v3.10.1 (#284) ([41d5190](https://github.com/wielorzeczownik/stream-stick-widget/commit/41d51908da8fcdbca75ef577e330df881dba96e1))
+- Update dependency vite to v8.3.8 (#282) ([07780f8](https://github.com/wielorzeczownik/stream-stick-widget/commit/07780f810ac6c68517048defce72f62ff7e72c7e))
+
 ## [0.2.41](https://github.com/wielorzeczownik/stream-stick-widget/compare/v0.2.40...v0.2.41) - 2026-11-16
 
 ### CI/CD
